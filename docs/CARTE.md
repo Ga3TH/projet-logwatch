@@ -45,5 +45,6 @@ Coller le resultat sous l'en-tete, puis remplir la seule colonne rend.
 
 ## Points opaques (question 8)
 
-- ligne 92 : que vaut le compteur d'IP quand le statut est >= 400 ?
-- ligne 134 : que vaut l'âge limite quand `retention_jours` est multiplié par 30 ?
+- ligne 83 : « que vaut la somme de toutes les requêtes quand le statut HTTP d'une ligne est supérieur ou égal à 400 ? »
+- ligne 109 : « que vaut le dictionnaire des suspects quand une URL légitime contient l'un des fragments de MOTIFS_SCAN ? »
+- ligne 134 : « que vaut l'âge limite en jours quand la variable de configuration vaut 7 ? »
