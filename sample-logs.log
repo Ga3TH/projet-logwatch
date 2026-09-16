@@ -1,0 +1,746 @@
+192.0.2.14 - - [03/Sep/2026:10:00:14 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 16035
+192.0.2.63 - - [03/Sep/2026:10:00:16 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 158680
+192.0.2.70 - - [03/Sep/2026:10:00:34 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 152300
+192.0.2.40 - - [03/Sep/2026:10:00:49 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 52558
+192.0.2.42 - - [03/Sep/2026:10:01:02 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 22833
+192.0.2.11 - - [03/Sep/2026:10:01:22 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 88978
+192.0.2.63 - - [03/Sep/2026:10:01:27 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 44602
+192.0.2.31 - - [03/Sep/2026:10:01:50 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 35740
+192.0.2.21 - - [03/Sep/2026:10:01:51 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 81787
+192.0.2.23 - - [03/Sep/2026:10:02:03 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 3847
+192.0.2.42 - - [03/Sep/2026:10:02:14 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 160437
+192.0.2.58 - - [03/Sep/2026:10:02:27 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 85926
+192.0.2.51 - - [03/Sep/2026:10:02:54 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 59881
+192.0.2.58 - - [03/Sep/2026:10:03:08 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 89995
+192.0.2.31 - - [03/Sep/2026:10:03:10 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 55344
+192.0.2.58 - - [03/Sep/2026:10:04:04 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 20664
+192.0.2.63 - - [03/Sep/2026:10:04:05 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 2986
+192.0.2.35 - - [03/Sep/2026:10:04:08 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 127107
+192.0.2.21 - - [03/Sep/2026:10:04:20 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 127508
+192.0.2.29 - - [03/Sep/2026:10:04:25 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 112639
+192.0.2.11 - - [03/Sep/2026:10:04:41 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 161341
+192.0.2.17 - - [03/Sep/2026:10:04:48 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 47388
+192.0.2.35 - - [03/Sep/2026:10:04:48 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 4678
+192.0.2.14 - - [03/Sep/2026:10:04:52 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 132844
+192.0.2.70 - - [03/Sep/2026:10:05:39 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 1456
+192.0.2.51 - - [03/Sep/2026:10:05:53 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 80784
+192.0.2.29 - - [03/Sep/2026:10:06:16 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 145745
+192.0.2.17 - - [03/Sep/2026:10:06:22 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 170993
+192.0.2.63 - - [03/Sep/2026:10:07:02 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 128079
+192.0.2.23 - - [03/Sep/2026:10:07:42 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 108308
+192.0.2.51 - - [03/Sep/2026:10:07:52 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 112908
+192.0.2.17 - - [03/Sep/2026:10:08:04 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 101611
+192.0.2.58 - - [03/Sep/2026:10:08:17 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 151600
+192.0.2.51 - - [03/Sep/2026:10:08:37 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 33727
+192.0.2.21 - - [03/Sep/2026:10:08:38 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 45784
+192.0.2.47 - - [03/Sep/2026:10:08:45 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 120001
+192.0.2.35 - - [03/Sep/2026:10:09:25 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 30679
+192.0.2.11 - - [03/Sep/2026:10:09:56 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 89651
+192.0.2.51 - - [03/Sep/2026:10:10:07 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 49893
+192.0.2.58 - - [03/Sep/2026:10:10:08 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 60260
+192.0.2.31 - - [03/Sep/2026:10:10:24 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 83653
+192.0.2.5 - - [03/Sep/2026:10:10:33 +0200] "GET /admin-guide.pdf HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 147370
+192.0.2.21 - - [03/Sep/2026:10:10:37 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 67534
+192.0.2.29 - - [03/Sep/2026:10:10:50 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 106811
+192.0.2.40 - - [03/Sep/2026:10:10:53 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 56482
+192.0.2.31 - - [03/Sep/2026:10:11:43 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 56379
+192.0.2.29 - - [03/Sep/2026:10:11:56 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 107278
+192.0.2.42 - - [03/Sep/2026:10:12:10 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 57372
+192.0.2.42 - - [03/Sep/2026:10:12:22 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 45804
+192.0.2.70 - - [03/Sep/2026:10:12:24 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 113983
+192.0.2.35 - - [03/Sep/2026:10:13:23 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 179764
+192.0.2.70 - - [03/Sep/2026:10:13:24 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 142125
+192.0.2.31 - - [03/Sep/2026:10:13:26 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 151769
+192.0.2.11 - - [03/Sep/2026:10:13:49 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 162773
+192.0.2.40 - - [03/Sep/2026:10:13:53 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 61718
+192.0.2.11 - - [03/Sep/2026:10:13:55 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 18231
+192.0.2.17 - - [03/Sep/2026:10:14:12 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 138671
+192.0.2.17 - - [03/Sep/2026:10:14:57 +0200] "GET /chambres HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 2770029
+192.0.2.63 - - [03/Sep/2026:10:15:07 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 36445
+192.0.2.11 - - [03/Sep/2026:10:15:12 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 158338
+192.0.2.17 - - [03/Sep/2026:10:15:38 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 75994
+192.0.2.42 - - [03/Sep/2026:10:16:33 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 49616
+192.0.2.23 - - [03/Sep/2026:10:16:53 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 21029
+192.0.2.5 - - [03/Sep/2026:10:17:05 +0200] "GET /administration/clients HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 22972
+192.0.2.5 - - [03/Sep/2026:10:17:45 +0200] "GET /administration-des-reservations.html HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 165527
+192.0.2.29 - - [03/Sep/2026:10:17:46 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 140379
+192.0.2.23 - - [03/Sep/2026:10:18:00 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 9917
+192.0.2.58 - - [03/Sep/2026:10:18:28 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 139386
+192.0.2.23 - - [03/Sep/2026:10:18:45 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 109562
+192.0.2.23 - - [03/Sep/2026:10:19:01 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 155859
+192.0.2.47 - - [03/Sep/2026:10:19:05 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 132837
+192.0.2.47 - - [03/Sep/2026:10:19:34 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 4631
+192.0.2.40 - - [03/Sep/2026:10:19:52 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 169667
+192.0.2.17 - - [03/Sep/2026:10:19:56 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 153784
+192.0.2.17 - - [03/Sep/2026:10:20:05 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 149480
+192.0.2.21 - - [03/Sep/2026:10:20:10 +0200] "GET /chambres HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 4299815
+192.0.2.11 - - [03/Sep/2026:10:20:22 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 21358
+192.0.2.40 - - [03/Sep/2026:10:20:22 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 79175
+192.0.2.31 - - [03/Sep/2026:10:20:22 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 168731
+192.0.2.23 - - [03/Sep/2026:10:20:30 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 5942
+192.0.2.23 - - [03/Sep/2026:10:20:49 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 12543
+192.0.2.40 - - [03/Sep/2026:10:20:58 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 22740
+192.0.2.40 - - [03/Sep/2026:10:21:44 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 34224
+192.0.2.40 - - [03/Sep/2026:10:22:16 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 102676
+192.0.2.31 - - [03/Sep/2026:10:22:19 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 159312
+192.0.2.31 - - [03/Sep/2026:10:22:19 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 1425
+192.0.2.40 - - [03/Sep/2026:10:22:28 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 83874
+192.0.2.21 - - [03/Sep/2026:10:22:37 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 138496
+192.0.2.70 - - [03/Sep/2026:10:22:38 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 105276
+192.0.2.42 - - [03/Sep/2026:10:22:47 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 76066
+192.0.2.47 - - [03/Sep/2026:10:22:50 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 78238
+192.0.2.42 - - [03/Sep/2026:10:23:25 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 129990
+192.0.2.14 - - [03/Sep/2026:10:23:33 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 124171
+192.0.2.14 - - [03/Sep/2026:10:24:23 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 132649
+192.0.2.23 - - [03/Sep/2026:10:24:28 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 41350
+192.0.2.31 - - [03/Sep/2026:10:24:46 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 97523
+192.0.2.47 - - [03/Sep/2026:10:25:06 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 30834
+192.0.2.21 - - [03/Sep/2026:10:25:36 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 37388
+192.0.2.31 - - [03/Sep/2026:10:25:42 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 50340
+192.0.2.51 - - [03/Sep/2026:10:25:54 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 46910
+192.0.2.70 - - [03/Sep/2026:10:26:07 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 79589
+192.0.2.40 - - [03/Sep/2026:10:26:08 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 136925
+192.0.2.31 - - [03/Sep/2026:10:26:17 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 167488
+192.0.2.23 - - [03/Sep/2026:10:26:36 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 48214
+192.0.2.42 - - [03/Sep/2026:10:27:15 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 167071
+192.0.2.11 - - [03/Sep/2026:10:27:29 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 74118
+192.0.2.14 - - [03/Sep/2026:10:28:00 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 48677
+192.0.2.70 - - [03/Sep/2026:10:28:04 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 101786
+192.0.2.70 - - [03/Sep/2026:10:28:26 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 81300
+192.0.2.11 - - [03/Sep/2026:10:28:37 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 66674
+192.0.2.11 - - [03/Sep/2026:10:28:46 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 156354
+192.0.2.47 - - [03/Sep/2026:10:28:53 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 5659
+192.0.2.58 - - [03/Sep/2026:10:28:54 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 109456
+192.0.2.47 - - [03/Sep/2026:10:29:00 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 143184
+192.0.2.17 - - [03/Sep/2026:10:29:03 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 67126
+192.0.2.31 - - [03/Sep/2026:10:29:41 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 922
+192.0.2.31 - - [03/Sep/2026:10:29:46 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 15172
+192.0.2.35 - - [03/Sep/2026:10:29:52 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 147469
+192.0.2.11 - - [03/Sep/2026:10:29:52 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 106592
+192.0.2.40 - - [03/Sep/2026:10:30:03 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 145303
+192.0.2.14 - - [03/Sep/2026:10:21:07 +0200] "GET /chambres HTTP/1.1" 200
+198.51.100.23 - - [03/Sep/2026:10:30:03 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1397
+192.0.2.35 - - [03/Sep/2026:10:30:08 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 90889
+198.51.100.23 - - [03/Sep/2026:10:30:08 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2808
+198.51.100.23 - - [03/Sep/2026:10:30:12 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2584
+198.51.100.23 - - [03/Sep/2026:10:30:17 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2687
+192.0.2.17 - - [03/Sep/2026:10:30:21 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 121222
+198.51.100.23 - - [03/Sep/2026:10:30:22 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 698
+198.51.100.23 - - [03/Sep/2026:10:30:28 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2316
+198.51.100.23 - - [03/Sep/2026:10:30:33 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3598
+198.51.100.23 - - [03/Sep/2026:10:30:36 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3182
+198.51.100.23 - - [03/Sep/2026:10:30:40 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3985
+192.0.2.11 - - [03/Sep/2026:10:30:42 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 33296
+192.0.2.40 - - [03/Sep/2026:10:30:46 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 142650
+198.51.100.23 - - [03/Sep/2026:10:30:48 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3714
+198.51.100.23 - - [03/Sep/2026:10:30:51 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3456
+198.51.100.23 - - [03/Sep/2026:10:30:57 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1243
+192.0.2.35 - - [03/Sep/2026:10:30:58 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 11680
+198.51.100.23 - - [03/Sep/2026:10:31:03 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2921
+198.51.100.23 - - [03/Sep/2026:10:31:08 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3215
+192.0.2.35 - - [03/Sep/2026:10:31:10 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 46717
+198.51.100.23 - - [03/Sep/2026:10:31:10 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1452
+198.51.100.23 - - [03/Sep/2026:10:31:16 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2723
+192.0.2.42 - - [03/Sep/2026:10:31:17 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 35093
+198.51.100.23 - - [03/Sep/2026:10:31:20 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1169
+198.51.100.23 - - [03/Sep/2026:10:31:25 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1171
+192.0.2.35 - - [03/Sep/2026:10:31:29 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 109954
+192.0.2.11 - - [03/Sep/2026:10:31:31 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 116426
+198.51.100.23 - - [03/Sep/2026:10:31:31 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1818
+198.51.100.23 - - [03/Sep/2026:10:31:37 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3664
+198.51.100.23 - - [03/Sep/2026:10:31:43 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2828
+192.0.2.23 - - [03/Sep/2026:10:31:45 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 110149
+198.51.100.23 - - [03/Sep/2026:10:31:46 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1093
+198.51.100.23 - - [03/Sep/2026:10:31:52 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2163
+192.0.2.58 - - [03/Sep/2026:10:31:56 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 68427
+198.51.100.23 - - [03/Sep/2026:10:31:57 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3579
+198.51.100.23 - - [03/Sep/2026:10:32:02 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1977
+192.0.2.40 - - [03/Sep/2026:10:32:05 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 86049
+198.51.100.23 - - [03/Sep/2026:10:32:07 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1712
+198.51.100.23 - - [03/Sep/2026:10:32:10 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3434
+198.51.100.23 - - [03/Sep/2026:10:32:18 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1559
+198.51.100.23 - - [03/Sep/2026:10:32:21 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1268
+198.51.100.23 - - [03/Sep/2026:10:32:25 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1681
+192.0.2.58 - - [03/Sep/2026:10:32:33 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 54578
+198.51.100.23 - - [03/Sep/2026:10:32:33 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3514
+198.51.100.23 - - [03/Sep/2026:10:32:37 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3825
+198.51.100.23 - - [03/Sep/2026:10:32:41 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 796
+198.51.100.23 - - [03/Sep/2026:10:32:45 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1866
+192.0.2.51 - - [03/Sep/2026:10:32:46 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 61780
+198.51.100.23 - - [03/Sep/2026:10:32:52 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3051
+198.51.100.23 - - [03/Sep/2026:10:32:56 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1308
+192.0.2.63 - - [03/Sep/2026:10:32:59 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 31558
+192.0.2.21 - - [03/Sep/2026:10:33:01 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 137949
+198.51.100.23 - - [03/Sep/2026:10:33:02 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 806
+198.51.100.23 - - [03/Sep/2026:10:33:07 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3315
+198.51.100.23 - - [03/Sep/2026:10:33:11 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1338
+198.51.100.23 - - [03/Sep/2026:10:33:17 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3351
+198.51.100.23 - - [03/Sep/2026:10:33:20 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2297
+192.0.2.47 - - [03/Sep/2026:10:33:21 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 162289
+198.51.100.23 - - [03/Sep/2026:10:33:27 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2441
+192.0.2.21 - - [03/Sep/2026:10:33:28 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 98504
+198.51.100.23 - - [03/Sep/2026:10:33:30 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 2666
+192.0.2.47 - - [03/Sep/2026:10:33:35 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 109243
+198.51.100.23 - - [03/Sep/2026:10:33:36 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 3669
+198.51.100.23 - - [03/Sep/2026:10:33:40 +0200] "POST /login HTTP/1.1" 401 180 "-" "python-requests/2.32" 1541
+192.0.2.51 - - [03/Sep/2026:10:33:55 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 115356
+192.0.2.47 - - [03/Sep/2026:10:34:07 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 152657
+192.0.2.21 - - [03/Sep/2026:10:34:26 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 141176
+192.0.2.11 - - [03/Sep/2026:10:35:10 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 3557
+192.0.2.31 - - [03/Sep/2026:10:35:13 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 6802
+192.0.2.23 - - [03/Sep/2026:10:35:15 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 129176
+192.0.2.11 - - [03/Sep/2026:10:35:20 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 94900
+192.0.2.5 - - [03/Sep/2026:10:35:49 +0200] "GET /administration-des-reservations.html HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 97276
+192.0.2.14 - - [03/Sep/2026:10:35:57 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 112897
+192.0.2.40 - - [03/Sep/2026:10:37:14 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 133695
+192.0.2.29 - - [03/Sep/2026:10:37:14 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 17497
+192.0.2.17 - - [03/Sep/2026:10:37:17 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 37357
+192.0.2.5 - - [03/Sep/2026:10:37:40 +0200] "GET /admin-guide.pdf HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 77495
+192.0.2.17 - - [03/Sep/2026:10:38:02 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 2834113
+192.0.2.70 - - [03/Sep/2026:10:39:53 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 93941
+192.0.2.29 - - [03/Sep/2026:10:40:21 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 162221
+192.0.2.5 - - [03/Sep/2026:10:41:14 +0200] "GET /administration/clients HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 91246
+192.0.2.29 - - [03/Sep/2026:10:41:15 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 134613
+192.0.2.63 - - [03/Sep/2026:10:41:20 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 138505
+192.0.2.21 - - [03/Sep/2026:10:41:26 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 28230
+192.0.2.42 - - [03/Sep/2026:10:41:36 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 94969
+192.0.2.29 - - [03/Sep/2026:10:41:41 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 24194
+192.0.2.14 - - [03/Sep/2026:10:41:56 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 76648
+192.0.2.29 - - [03/Sep/2026:10:42:09 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 54595
+192.0.2.21 - - [03/Sep/2026:10:42:12 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 1170
+192.0.2.23 - - [03/Sep/2026:10:42:36 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 77167
+192.0.2.21 - - [03/Sep/2026:10:42:48 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 59405
+192.0.2.35 - - [03/Sep/2026:10:43:05 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 146767
+192.0.2.63 - - [03/Sep/2026:10:43:45 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 143632
+192.0.2.58 - - [03/Sep/2026:10:43:48 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 150258
+192.0.2.47 - - [03/Sep/2026:10:44:09 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 59029
+192.0.2.63 - - [03/Sep/2026:10:44:09 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 144317
+192.0.2.58 - - [03/Sep/2026:10:44:13 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 96051
+192.0.2.14 - - [03/Sep/2026:10:44:33 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 165829
+192.0.2.11 - - [03/Sep/2026:10:44:36 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 59826
+192.0.2.17 - - [03/Sep/2026:10:44:48 +0200] "GET /chambres HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 2619670
+192.0.2.17 - - [03/Sep/2026:10:45:01 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 100868
+192.0.2.11 - - [03/Sep/2026:10:45:02 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 107403
+192.0.2.40 - - [03/Sep/2026:10:45:08 +0200] "GET /chambres HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 3595104
+192.0.2.47 - - [03/Sep/2026:10:45:12 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 81516
+192.0.2.58 - - [03/Sep/2026:10:45:46 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 11403
+192.0.2.70 - - [03/Sep/2026:10:45:47 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 166796
+192.0.2.17 - - [03/Sep/2026:10:46:08 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 71592
+192.0.2.21 - - [03/Sep/2026:10:46:12 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 101496
+192.0.2.40 - - [03/Sep/2026:10:46:31 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 13176
+192.0.2.11 - - [03/Sep/2026:10:46:34 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 57668
+192.0.2.29 - - [03/Sep/2026:10:46:41 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 88780
+192.0.2.47 - - [03/Sep/2026:10:47:00 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 132833
+192.0.2.58 - - [03/Sep/2026:10:47:00 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 66821
+192.0.2.70 - - [03/Sep/2026:10:47:28 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 51145
+192.0.2.42 - - [03/Sep/2026:10:48:32 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 171071
+192.0.2.11 - - [03/Sep/2026:10:49:07 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 34173
+192.0.2.23 - - [03/Sep/2026:10:49:08 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 74073
+192.0.2.35 - - [03/Sep/2026:10:49:13 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 78114
+192.0.2.5 - - [03/Sep/2026:10:49:26 +0200] "GET /administration/planning HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 42434
+192.0.2.14 - - [03/Sep/2026:10:49:28 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 31600
+192.0.2.29 - - [03/Sep/2026:10:50:03 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 82795
+192.0.2.51 - - [03/Sep/2026:10:50:47 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 148209
+192.0.2.40 - - [03/Sep/2026:10:50:49 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 157648
+192.0.2.29 - - [03/Sep/2026:10:50:51 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 60899
+192.0.2.21 - - [03/Sep/2026:10:51:39 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 143397
+192.0.2.29 - - [03/Sep/2026:10:51:54 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 149447
+203.0.113.66 - - [03/Sep/2026:10:52:00 +0200] "GET /wp-admin/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1320
+203.0.113.66 - - [03/Sep/2026:10:52:07 +0200] "GET /wp-login.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2029
+192.0.2.17 - - [03/Sep/2026:10:52:14 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 77719
+203.0.113.66 - - [03/Sep/2026:10:52:14 +0200] "GET /phpmyadmin/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1104
+192.0.2.42 - - [03/Sep/2026:10:52:17 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 1674
+203.0.113.66 - - [03/Sep/2026:10:52:21 +0200] "GET /phpMyAdmin/index.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2311
+203.0.113.66 - - [03/Sep/2026:10:52:28 +0200] "GET /.env HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1260
+203.0.113.66 - - [03/Sep/2026:10:52:35 +0200] "GET /.git/config HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 607
+203.0.113.66 - - [03/Sep/2026:10:52:42 +0200] "GET /xmlrpc.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2491
+192.0.2.31 - - [03/Sep/2026:10:52:48 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 65915
+203.0.113.66 - - [03/Sep/2026:10:52:49 +0200] "GET /../../etc/passwd HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1002
+192.0.2.17 - - [03/Sep/2026:10:52:54 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 147890
+203.0.113.66 - - [03/Sep/2026:10:52:56 +0200] "GET /wp-content/plugins/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 863
+192.0.2.47 - - [03/Sep/2026:10:52:57 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 3465
+192.0.2.51 - - [03/Sep/2026:10:52:58 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 120581
+203.0.113.66 - - [03/Sep/2026:10:53:03 +0200] "GET /admin/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2039
+203.0.113.66 - - [03/Sep/2026:10:53:10 +0200] "GET /administrator/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2039
+192.0.2.29 - - [03/Sep/2026:10:53:11 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 128835
+203.0.113.66 - - [03/Sep/2026:10:53:17 +0200] "GET /.env.bak HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 643
+203.0.113.66 - - [03/Sep/2026:10:53:24 +0200] "GET /backup.zip HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2263
+203.0.113.66 - - [03/Sep/2026:10:53:31 +0200] "GET /config.php.bak HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1194
+203.0.113.66 - - [03/Sep/2026:10:53:38 +0200] "GET /wp-admin/install.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 736
+203.0.113.66 - - [03/Sep/2026:10:53:45 +0200] "GET /phpmyadmin/setup/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 520
+203.0.113.66 - - [03/Sep/2026:10:53:52 +0200] "GET /.git/HEAD HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1258
+203.0.113.66 - - [03/Sep/2026:10:53:59 +0200] "GET /vendor/phpunit/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1673
+203.0.113.66 - - [03/Sep/2026:10:54:06 +0200] "GET /cgi-bin/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 416
+192.0.2.42 - - [03/Sep/2026:10:54:08 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 116151
+203.0.113.66 - - [03/Sep/2026:10:54:13 +0200] "GET /shell.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 517
+203.0.113.66 - - [03/Sep/2026:10:54:20 +0200] "GET /.aws/credentials HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1802
+192.0.2.14 - - [03/Sep/2026:10:54:21 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 54324
+192.0.2.42 - - [03/Sep/2026:10:54:27 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 26576
+203.0.113.66 - - [03/Sep/2026:10:54:27 +0200] "GET /wp-includes/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1228
+203.0.113.66 - - [03/Sep/2026:10:54:34 +0200] "GET /api/../../etc/shadow HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 855
+203.0.113.66 - - [03/Sep/2026:10:54:41 +0200] "GET /mysql/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 695
+203.0.113.66 - - [03/Sep/2026:10:54:48 +0200] "GET /adminer.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2316
+203.0.113.66 - - [03/Sep/2026:10:54:55 +0200] "GET /.svn/entries HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 2127
+203.0.113.66 - - [03/Sep/2026:10:55:02 +0200] "GET /old/ HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 1708
+192.0.2.23 - - [03/Sep/2026:10:55:04 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 43704
+192.0.2.17 - - [03/Sep/2026:10:55:07 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 128220
+192.0.2.29 - - [03/Sep/2026:10:55:08 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 27312
+203.0.113.66 - - [03/Sep/2026:10:55:09 +0200] "GET /test.php HTTP/1.1" 404 512 "-" "Mozilla/5.0 zgrab/0.x" 475
+192.0.2.63 - - [03/Sep/2026:10:55:20 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 41364
+192.0.2.47 - - [03/Sep/2026:10:55:22 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 143245
+192.0.2.14 - - [03/Sep/2026:10:55:53 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 154304
+192.0.2.47 - - [03/Sep/2026:10:56:16 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 122963
+192.0.2.17 - - [03/Sep/2026:10:56:30 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 75513
+192.0.2.70 - - [03/Sep/2026:10:56:31 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 21992
+192.0.2.63 - - [03/Sep/2026:10:57:02 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 4901636
+192.0.2.31 - - [03/Sep/2026:10:57:21 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 165051
+192.0.2.58 - - [03/Sep/2026:10:57:39 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 140231
+192.0.2.51 - - [03/Sep/2026:10:57:39 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 79840
+192.0.2.31 - - [03/Sep/2026:10:57:58 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 14662
+192.0.2.14 - - [03/Sep/2026:10:57:59 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 174264
+<<< rotation du journal 03/Sep/2026 >>>
+192.0.2.11 - - [03/Sep/2026:10:58:00 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 80944
+192.0.2.17 - - [03/Sep/2026:10:58:08 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 167665
+192.0.2.40 - - [03/Sep/2026:10:58:30 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 125132
+192.0.2.47 - - [03/Sep/2026:10:58:33 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 4972
+192.0.2.63 - - [03/Sep/2026:10:58:43 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 111449
+192.0.2.35 - - [03/Sep/2026:10:59:02 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 154749
+192.0.2.42 - - [03/Sep/2026:10:59:27 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 65389
+192.0.2.21 - - [03/Sep/2026:11:00:09 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 157927
+192.0.2.17 - - [03/Sep/2026:11:00:16 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 61565
+192.0.2.17 - - [03/Sep/2026:11:00:39 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 178807
+192.0.2.17 - - [03/Sep/2026:11:00:40 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 178894
+192.0.2.70 - - [03/Sep/2026:11:01:05 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 170405
+192.0.2.14 - - [03/Sep/2026:11:01:39 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 76067
+192.0.2.47 - - [03/Sep/2026:11:01:52 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 117150
+192.0.2.29 - - [03/Sep/2026:11:02:01 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 100104
+192.0.2.5 - - [03/Sep/2026:11:02:10 +0200] "GET /administration-des-reservations.html HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 55703
+192.0.2.70 - - [03/Sep/2026:11:02:14 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 13922
+192.0.2.14 - - [03/Sep/2026:11:02:18 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 40667
+192.0.2.31 - - [03/Sep/2026:11:02:28 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 167638
+192.0.2.29 - - [03/Sep/2026:11:03:01 +0200] "GET /chambres HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 3575106
+192.0.2.63 - - [03/Sep/2026:11:03:25 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 21728
+192.0.2.58 - - [03/Sep/2026:11:03:32 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 139095
+192.0.2.51 - - [03/Sep/2026:11:03:33 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 66317
+192.0.2.51 - - [03/Sep/2026:11:03:35 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 12379
+192.0.2.35 - - [03/Sep/2026:11:03:41 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 124364
+192.0.2.35 - - [03/Sep/2026:11:03:51 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 113058
+192.0.2.47 - - [03/Sep/2026:11:04:04 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 74955
+192.0.2.70 - - [03/Sep/2026:11:04:43 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 102009
+192.0.2.63 - - [03/Sep/2026:11:04:53 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 21705
+192.0.2.23 - - [03/Sep/2026:11:04:54 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 27885
+192.0.2.42 - - [03/Sep/2026:11:05:36 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 98578
+192.0.2.23 - - [03/Sep/2026:11:05:46 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 7596
+192.0.2.17 - - [03/Sep/2026:11:06:21 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 39875
+192.0.2.23 - - [03/Sep/2026:11:06:35 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 97977
+192.0.2.42 - - [03/Sep/2026:11:07:12 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 132102
+192.0.2.17 - - [03/Sep/2026:11:07:29 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 74886
+192.0.2.35 - - [03/Sep/2026:11:07:33 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 35395
+192.0.2.11 - - [03/Sep/2026:11:07:45 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 79086
+192.0.2.51 - - [03/Sep/2026:11:07:58 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 132119
+192.0.2.58 - - [03/Sep/2026:11:07:59 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 106496
+192.0.2.63 - - [03/Sep/2026:11:08:12 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 108451
+192.0.2.47 - - [03/Sep/2026:11:08:14 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 71473
+192.0.2.14 - - [03/Sep/2026:11:08:41 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 14084
+192.0.2.63 - - [03/Sep/2026:11:09:09 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 147602
+192.0.2.11 - - [03/Sep/2026:11:09:13 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 17277
+192.0.2.40 - - [03/Sep/2026:11:09:30 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 83353
+192.0.2.11 - - [03/Sep/2026:11:10:21 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 163795
+192.0.2.14 - - [03/Sep/2026:11:10:35 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 56714
+192.0.2.63 - - [03/Sep/2026:11:11:11 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 24205
+192.0.2.31 - - [03/Sep/2026:11:11:34 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 54233
+192.0.2.63 - - [03/Sep/2026:11:12:07 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 86712
+192.0.2.47 - - [03/Sep/2026:11:12:17 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 121065
+192.0.2.21 - - [03/Sep/2026:11:12:46 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 30154
+192.0.2.23 - - [03/Sep/2026:11:12:46 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 133435
+192.0.2.70 - - [03/Sep/2026:11:13:14 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 57526
+192.0.2.35 - - [03/Sep/2026:11:13:18 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 62080
+192.0.2.5 - - [03/Sep/2026:11:13:59 +0200] "GET /administration/export.csv HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 161107
+192.0.2.29 - - [03/Sep/2026:11:14:31 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 174290
+192.0.2.21 - - [03/Sep/2026:11:15:02 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 142613
+192.0.2.47 - - [03/Sep/2026:11:15:02 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 58125
+192.0.2.51 - - [03/Sep/2026:11:15:10 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 103582
+192.0.2.63 - - [03/Sep/2026:11:15:20 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 44084
+192.0.2.14 - - [03/Sep/2026:11:15:32 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 46519
+192.0.2.29 - - [03/Sep/2026:11:15:43 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 116593
+192.0.2.63 - - [03/Sep/2026:11:15:55 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 86129
+192.0.2.17 - - [03/Sep/2026:11:16:09 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 71550
+192.0.2.31 - - [03/Sep/2026:11:16:11 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 2525275
+192.0.2.51 - - [03/Sep/2026:11:16:43 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 41812
+192.0.2.14 - - [03/Sep/2026:11:16:43 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 109689
+192.0.2.14 - - [03/Sep/2026:11:16:49 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 60325
+192.0.2.35 - - [03/Sep/2026:11:16:57 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 71876
+192.0.2.58 - - [03/Sep/2026:11:17:00 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 122480
+192.0.2.35 - - [03/Sep/2026:11:17:00 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 83516
+192.0.2.42 - - [03/Sep/2026:11:17:00 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 24328
+192.0.2.40 - - [03/Sep/2026:11:17:00 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 111650
+192.0.2.42 - - [03/Sep/2026:11:17:01 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 145482
+192.0.2.70 - - [03/Sep/2026:11:17:01 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 127842
+192.0.2.51 - - [03/Sep/2026:11:17:02 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 148863
+192.0.2.47 - - [03/Sep/2026:11:17:02 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 77261
+192.0.2.21 - - [03/Sep/2026:11:17:03 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 25585
+192.0.2.58 - - [03/Sep/2026:11:17:03 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 75674
+192.0.2.42 - - [03/Sep/2026:11:17:03 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 133591
+192.0.2.51 - - [03/Sep/2026:11:17:04 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 95015
+192.0.2.14 - - [03/Sep/2026:11:17:04 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 13026
+192.0.2.31 - - [03/Sep/2026:11:17:05 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 87164
+192.0.2.40 - - [03/Sep/2026:11:17:05 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 124142
+192.0.2.58 - - [03/Sep/2026:11:17:05 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 156637
+192.0.2.17 - - [03/Sep/2026:11:17:06 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 36874
+192.0.2.21 - - [03/Sep/2026:11:17:07 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 90254
+192.0.2.31 - - [03/Sep/2026:11:17:07 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 32991
+192.0.2.21 - - [03/Sep/2026:11:17:07 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 26734
+192.0.2.17 - - [03/Sep/2026:11:17:07 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 67913
+192.0.2.11 - - [03/Sep/2026:11:17:07 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 76694
+192.0.2.51 - - [03/Sep/2026:11:17:08 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 31687
+192.0.2.58 - - [03/Sep/2026:11:17:09 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 90123
+192.0.2.58 - - [03/Sep/2026:11:17:09 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 135188
+192.0.2.17 - - [03/Sep/2026:11:17:10 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 19077
+192.0.2.35 - - [03/Sep/2026:11:17:10 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 145637
+192.0.2.31 - - [03/Sep/2026:11:17:11 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 28099
+192.0.2.70 - - [03/Sep/2026:11:17:12 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 53348
+192.0.2.47 - - [03/Sep/2026:11:17:12 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 104513
+192.0.2.11 - - [03/Sep/2026:11:17:12 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 45512
+192.0.2.58 - - [03/Sep/2026:11:17:12 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 167331
+192.0.2.21 - - [03/Sep/2026:11:17:13 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 134902
+192.0.2.21 - - [03/Sep/2026:11:17:13 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 64063
+192.0.2.29 - - [03/Sep/2026:11:17:14 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 66888
+192.0.2.42 - - [03/Sep/2026:11:17:14 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 152562
+192.0.2.14 - - [03/Sep/2026:11:17:14 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 24570
+192.0.2.42 - - [03/Sep/2026:11:17:14 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 33016
+192.0.2.31 - - [03/Sep/2026:11:17:15 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 65175
+192.0.2.11 - - [03/Sep/2026:11:17:15 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 24023
+192.0.2.35 - - [03/Sep/2026:11:17:15 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 162423
+192.0.2.11 - - [03/Sep/2026:11:17:15 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 161989
+192.0.2.21 - - [03/Sep/2026:11:17:15 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 59767
+192.0.2.63 - - [03/Sep/2026:11:17:15 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 111179
+192.0.2.14 - - [03/Sep/2026:11:17:16 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 99805
+192.0.2.11 - - [03/Sep/2026:11:17:17 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 8140
+192.0.2.23 - - [03/Sep/2026:11:17:17 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 167846
+192.0.2.63 - - [03/Sep/2026:11:17:17 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 8759
+192.0.2.63 - - [03/Sep/2026:11:17:18 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 51833
+192.0.2.40 - - [03/Sep/2026:11:17:18 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 88554
+192.0.2.17 - - [03/Sep/2026:11:17:18 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 47055
+192.0.2.35 - - [03/Sep/2026:11:17:19 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 105038
+192.0.2.47 - - [03/Sep/2026:11:17:19 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 75805
+192.0.2.47 - - [03/Sep/2026:11:17:19 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 49956
+192.0.2.63 - - [03/Sep/2026:11:17:19 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 125779
+192.0.2.70 - - [03/Sep/2026:11:17:20 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 93349
+192.0.2.63 - - [03/Sep/2026:11:17:20 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 161735
+192.0.2.29 - - [03/Sep/2026:11:17:20 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 92569
+192.0.2.40 - - [03/Sep/2026:11:17:20 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 101313
+192.0.2.14 - - [03/Sep/2026:11:17:21 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 31593
+192.0.2.14 - - [03/Sep/2026:11:17:21 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 105920
+192.0.2.35 - - [03/Sep/2026:11:17:22 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 40208
+192.0.2.58 - - [03/Sep/2026:11:17:22 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 122970
+192.0.2.63 - - [03/Sep/2026:11:17:22 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 76441
+192.0.2.35 - - [03/Sep/2026:11:17:22 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 55348
+192.0.2.17 - - [03/Sep/2026:11:17:22 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 113640
+192.0.2.31 - - [03/Sep/2026:11:17:22 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 101015
+192.0.2.35 - - [03/Sep/2026:11:17:23 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 87682
+192.0.2.51 - - [03/Sep/2026:11:17:23 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 22215
+192.0.2.29 - - [03/Sep/2026:11:17:25 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 67793
+192.0.2.35 - - [03/Sep/2026:11:17:26 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 37226
+192.0.2.14 - - [03/Sep/2026:11:17:27 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 78689
+192.0.2.21 - - [03/Sep/2026:11:17:27 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 127376
+192.0.2.58 - - [03/Sep/2026:11:17:28 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 95471
+192.0.2.42 - - [03/Sep/2026:11:17:28 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 144331
+192.0.2.40 - - [03/Sep/2026:11:17:29 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 176462
+192.0.2.23 - - [03/Sep/2026:11:17:29 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 24604
+192.0.2.35 - - [03/Sep/2026:11:17:29 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 113605
+192.0.2.11 - - [03/Sep/2026:11:17:30 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 4967
+192.0.2.23 - - [03/Sep/2026:11:17:30 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 158308
+192.0.2.42 - - [03/Sep/2026:11:17:31 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 86092
+192.0.2.51 - - [03/Sep/2026:11:17:31 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 6538
+192.0.2.40 - - [03/Sep/2026:11:17:31 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 72369
+192.0.2.29 - - [03/Sep/2026:11:17:31 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 2633
+192.0.2.14 - - [03/Sep/2026:11:17:32 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 146143
+192.0.2.31 - - [03/Sep/2026:11:17:32 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 60953
+192.0.2.31 - - [03/Sep/2026:11:17:33 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 32665
+192.0.2.40 - - [03/Sep/2026:11:17:33 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 154319
+192.0.2.63 - - [03/Sep/2026:11:17:33 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 94394
+192.0.2.42 - - [03/Sep/2026:11:17:33 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 122717
+192.0.2.63 - - [03/Sep/2026:11:17:33 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 156936
+192.0.2.42 - - [03/Sep/2026:11:17:33 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 93178
+192.0.2.47 - - [03/Sep/2026:11:17:34 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 127939
+192.0.2.35 - - [03/Sep/2026:11:17:34 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 31492
+192.0.2.58 - - [03/Sep/2026:11:17:35 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 4011
+192.0.2.17 - - [03/Sep/2026:11:17:35 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 16700
+192.0.2.40 - - [03/Sep/2026:11:17:36 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 124572
+192.0.2.23 - - [03/Sep/2026:11:17:36 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 127572
+192.0.2.29 - - [03/Sep/2026:11:17:36 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 37884
+192.0.2.14 - - [03/Sep/2026:11:17:36 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 92149
+192.0.2.31 - - [03/Sep/2026:11:17:37 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 74593
+192.0.2.42 - - [03/Sep/2026:11:17:37 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 82530
+192.0.2.70 - - [03/Sep/2026:11:17:37 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 5861
+192.0.2.58 - - [03/Sep/2026:11:17:38 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 151090
+192.0.2.31 - - [03/Sep/2026:11:17:38 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 173026
+192.0.2.70 - - [03/Sep/2026:11:17:38 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 57488
+192.0.2.47 - - [03/Sep/2026:11:17:38 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 73253
+192.0.2.70 - - [03/Sep/2026:11:17:39 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 107871
+192.0.2.47 - - [03/Sep/2026:11:17:39 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 22497
+192.0.2.5 - - [03/Sep/2026:11:17:40 +0200] "GET /administration/planning HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 163553
+192.0.2.31 - - [03/Sep/2026:11:17:40 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 28928
+192.0.2.51 - - [03/Sep/2026:11:17:41 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 160125
+192.0.2.11 - - [03/Sep/2026:11:17:43 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 23414
+192.0.2.23 - - [03/Sep/2026:11:17:43 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 13162
+192.0.2.63 - - [03/Sep/2026:11:17:44 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 122180
+192.0.2.23 - - [03/Sep/2026:11:17:44 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 95213
+192.0.2.47 - - [03/Sep/2026:11:17:45 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 144065
+192.0.2.70 - - [03/Sep/2026:11:17:45 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 172646
+192.0.2.42 - - [03/Sep/2026:11:17:45 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 142565
+192.0.2.31 - - [03/Sep/2026:11:17:45 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 148069
+192.0.2.63 - - [03/Sep/2026:11:17:45 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 30480
+192.0.2.40 - - [03/Sep/2026:11:17:45 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 6668
+192.0.2.47 - - [03/Sep/2026:11:17:45 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 18028
+192.0.2.51 - - [03/Sep/2026:11:17:46 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 67569
+192.0.2.21 - - [03/Sep/2026:11:17:46 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 90535
+192.0.2.63 - - [03/Sep/2026:11:17:47 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 162404
+192.0.2.14 - - [03/Sep/2026:11:17:48 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 33319
+192.0.2.31 - - [03/Sep/2026:11:17:48 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 142050
+192.0.2.47 - - [03/Sep/2026:11:17:48 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 5093
+192.0.2.17 - - [03/Sep/2026:11:17:48 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 38012
+192.0.2.23 - - [03/Sep/2026:11:17:48 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 45053
+192.0.2.11 - - [03/Sep/2026:11:17:49 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 100579
+192.0.2.17 - - [03/Sep/2026:11:17:50 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 38561
+192.0.2.47 - - [03/Sep/2026:11:17:50 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 145023
+192.0.2.51 - - [03/Sep/2026:11:17:50 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 97536
+192.0.2.23 - - [03/Sep/2026:11:17:50 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 167189
+192.0.2.35 - - [03/Sep/2026:11:17:50 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 93407
+192.0.2.47 - - [03/Sep/2026:11:17:51 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 13737
+192.0.2.58 - - [03/Sep/2026:11:17:52 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 63301
+192.0.2.35 - - [03/Sep/2026:11:17:52 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 120836
+192.0.2.11 - - [03/Sep/2026:11:17:53 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 31306
+192.0.2.40 - - [03/Sep/2026:11:17:53 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 178904
+192.0.2.14 - - [03/Sep/2026:11:17:53 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 49225
+192.0.2.40 - - [03/Sep/2026:11:17:53 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 178791
+192.0.2.14 - - [03/Sep/2026:11:17:54 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 11459
+192.0.2.51 - - [03/Sep/2026:11:17:54 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 34563
+192.0.2.47 - - [03/Sep/2026:11:17:54 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 8812
+192.0.2.51 - - [03/Sep/2026:11:17:54 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 14039
+192.0.2.31 - - [03/Sep/2026:11:2x:15 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0" 900
+192.0.2.23 - - [03/Sep/2026:11:17:54 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 89654
+192.0.2.58 - - [03/Sep/2026:11:17:54 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 172653
+192.0.2.21 - - [03/Sep/2026:11:17:55 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 140771
+192.0.2.23 - - [03/Sep/2026:11:17:55 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 33490
+192.0.2.42 - - [03/Sep/2026:11:17:55 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 93488
+192.0.2.11 - - [03/Sep/2026:11:17:56 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 24222
+192.0.2.11 - - [03/Sep/2026:11:17:56 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 158905
+192.0.2.63 - - [03/Sep/2026:11:17:56 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 88210
+192.0.2.14 - - [03/Sep/2026:11:17:57 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 175585
+192.0.2.42 - - [03/Sep/2026:11:17:57 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 95943
+192.0.2.58 - - [03/Sep/2026:11:17:57 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 107792
+192.0.2.40 - - [03/Sep/2026:11:17:57 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 178102
+192.0.2.70 - - [03/Sep/2026:11:17:57 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 119867
+192.0.2.29 - - [03/Sep/2026:11:17:58 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 92142
+192.0.2.42 - - [03/Sep/2026:11:17:58 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 132103
+192.0.2.31 - - [03/Sep/2026:11:17:58 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 16279
+192.0.2.58 - - [03/Sep/2026:11:17:58 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 114689
+192.0.2.35 - - [03/Sep/2026:11:17:58 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 88840
+192.0.2.63 - - [03/Sep/2026:11:17:58 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 116044
+192.0.2.29 - - [03/Sep/2026:11:17:58 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 115487
+192.0.2.11 - - [03/Sep/2026:11:17:59 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 20315
+192.0.2.63 - - [03/Sep/2026:11:17:59 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 154046
+192.0.2.35 - - [03/Sep/2026:11:18:03 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 80863
+192.0.2.47 - - [03/Sep/2026:11:18:22 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 151152
+192.0.2.5 - - [03/Sep/2026:11:18:39 +0200] "GET /administration/clients HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 15419
+192.0.2.70 - - [03/Sep/2026:11:18:45 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 162659
+192.0.2.58 - - [03/Sep/2026:11:19:03 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 160253
+192.0.2.11 - - [03/Sep/2026:11:19:07 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 88363
+192.0.2.35 - - [03/Sep/2026:11:19:07 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 127663
+192.0.2.23 - - [03/Sep/2026:11:20:07 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 52361
+192.0.2.29 - - [03/Sep/2026:11:20:23 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 50686
+192.0.2.70 - - [03/Sep/2026:11:20:49 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 57959
+192.0.2.11 - - [03/Sep/2026:11:21:04 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 41586
+192.0.2.58 - - [03/Sep/2026:11:21:05 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 156889
+192.0.2.17 - - [03/Sep/2026:11:21:12 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 44573
+192.0.2.58 - - [03/Sep/2026:11:21:23 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 19713
+192.0.2.5 - - [03/Sep/2026:11:21:26 +0200] "GET /administration/tarifs HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 168893
+192.0.2.58 - - [03/Sep/2026:11:22:07 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 122549
+192.0.2.31 - - [03/Sep/2026:11:22:09 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 69643
+192.0.2.51 - - [03/Sep/2026:11:22:18 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 128928
+192.0.2.35 - - [03/Sep/2026:11:22:32 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 57608
+192.0.2.14 - - [03/Sep/2026:11:22:51 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 156099
+192.0.2.21 - - [03/Sep/2026:11:23:20 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 133826
+192.0.2.29 - - [03/Sep/2026:11:23:39 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 42344
+192.0.2.40 - - [03/Sep/2026:11:23:42 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 166793
+192.0.2.31 - - [03/Sep/2026:11:23:47 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 149206
+192.0.2.17 - - [03/Sep/2026:11:24:01 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 105401
+192.0.2.51 - - [03/Sep/2026:11:24:19 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 64773
+192.0.2.11 - - [03/Sep/2026:11:24:35 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 106254
+192.0.2.21 - - [03/Sep/2026:11:24:38 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 65719
+192.0.2.47 - - [03/Sep/2026:11:25:03 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 25871
+192.0.2.11 - - [03/Sep/2026:11:25:06 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 102219
+192.0.2.23 - - [03/Sep/2026:11:25:11 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 21093
+192.0.2.42 - - [03/Sep/2026:11:25:35 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 87258
+192.0.2.5 - - [03/Sep/2026:11:25:57 +0200] "GET /administration/tarifs HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 106575
+192.0.2.14 - - [03/Sep/2026:11:26:23 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 166381
+192.0.2.70 - - [03/Sep/2026:11:26:55 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 47705
+192.0.2.14 - - [03/Sep/2026:11:27:18 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 150379
+192.0.2.70 - - [03/Sep/2026:11:27:31 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 19494
+192.0.2.47 - - [03/Sep/2026:11:27:35 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 3723
+192.0.2.29 - - [03/Sep/2026:11:27:45 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 26424
+192.0.2.21 - - [03/Sep/2026:11:27:56 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 133378
+192.0.2.21 - - [03/Sep/2026:11:27:59 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 137998
+192.0.2.31 - - [03/Sep/2026:11:28:42 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 103180
+192.0.2.42 - - [03/Sep/2026:11:28:42 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 135793
+192.0.2.21 - - [03/Sep/2026:11:29:08 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 172342
+192.0.2.70 - - [03/Sep/2026:11:29:42 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 66879
+192.0.2.17 - - [03/Sep/2026:11:29:59 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 137667
+192.0.2.17 - - [03/Sep/2026:11:30:05 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 128809
+192.0.2.11 - - [03/Sep/2026:11:30:57 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 40643
+192.0.2.51 - - [03/Sep/2026:11:31:06 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 168359
+192.0.2.51 - - [03/Sep/2026:11:31:35 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 95794
+192.0.2.21 - - [03/Sep/2026:11:32:23 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 114447
+192.0.2.14 - - [03/Sep/2026:11:33:04 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 68992
+192.0.2.42 - - [03/Sep/2026:11:33:29 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 168830
+192.0.2.51 - - [03/Sep/2026:11:33:34 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 94978
+192.0.2.63 - - [03/Sep/2026:11:33:34 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 141825
+192.0.2.51 - - [03/Sep/2026:11:34:14 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 133209
+192.0.2.40 - - [03/Sep/2026:11:34:35 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 140638
+192.0.2.70 - - [03/Sep/2026:11:34:38 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 104082
+192.0.2.51 - - [03/Sep/2026:11:34:47 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 128096
+192.0.2.11 - - [03/Sep/2026:11:34:49 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 46945
+192.0.2.31 - - [03/Sep/2026:11:35:20 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 40770
+192.0.2.47 - - [03/Sep/2026:11:35:41 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 137559
+192.0.2.47 - - [03/Sep/2026:11:35:59 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 157550
+192.0.2.23 - - [03/Sep/2026:11:36:06 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 125804
+192.0.2.47 - - [03/Sep/2026:11:36:11 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 86617
+192.0.2.47 - - [03/Sep/2026:11:36:29 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 47838
+192.0.2.23 - - [03/Sep/2026:11:37:11 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 63088
+192.0.2.35 - - [03/Sep/2026:11:37:49 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 82973
+192.0.2.51 - - [03/Sep/2026:11:37:49 +0200] "GET /chambres HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 3941431
+192.0.2.47 - - [03/Sep/2026:11:38:00 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 111460
+192.0.2.51 - - [03/Sep/2026:11:38:01 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 62781
+192.0.2.17 - - [03/Sep/2026:11:38:35 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 40777
+192.0.2.58 - - [03/Sep/2026:11:38:39 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 103339
+192.0.2.11 - - [03/Sep/2026:11:38:46 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 2024
+192.0.2.63 - - [03/Sep/2026:11:38:50 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 173952
+192.0.2.29 - - [03/Sep/2026:11:39:16 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 158220
+192.0.2.23 - - [03/Sep/2026:11:39:42 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 146660
+192.0.2.42 - - [03/Sep/2026:11:39:51 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 45319
+192.0.2.21 - - [03/Sep/2026:11:39:51 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 78688
+192.0.2.23 - - [03/Sep/2026:11:39:59 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 173156
+192.0.2.11 - - [03/Sep/2026:11:40:01 +0200] "GET /reservations HTTP/1.1" 500 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 122037
+192.0.2.17 - - [03/Sep/2026:11:40:04 +0200] "GET /chambres HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 165397
+192.0.2.47 - - [03/Sep/2026:11:40:07 +0200] "GET /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 29527
+192.0.2.42 - - [03/Sep/2026:11:40:11 +0200] "GET /static/app.css HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 65241
+192.0.2.29 - - [03/Sep/2026:11:40:13 +0200] "POST /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 48290
+192.0.2.17 - - [03/Sep/2026:11:40:17 +0200] "POST /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 138415
+192.0.2.51 - - [03/Sep/2026:11:40:20 +0200] "GET /index.html HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 125726
+192.0.2.40 - - [03/Sep/2026:11:40:23 +0200] "POST /reservations HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 10060
+192.0.2.63 - - [03/Sep/2026:11:40:29 +0200] "GET /chambres/14 HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 122994
+192.0.2.11 - - [03/Sep/2026:11:40:32 +0200] "POST /reservations HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 21432
+192.0.2.47 - - [03/Sep/2026:11:40:32 +0200] "GET /chambres/14 HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 100928
+192.0.2.14 - - [03/Sep/2026:11:40:32 +0200] "GET / HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 114962
+192.0.2.17 - - [03/Sep/2026:11:40:39 +0200] "POST /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 82143
+192.0.2.47 - - [03/Sep/2026:11:40:40 +0200] "GET /chambres HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 121751
+192.0.2.58 - - [03/Sep/2026:11:40:47 +0200] "GET /static/app.css HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 10899
+192.0.2.40 - - [03/Sep/2026:11:40:48 +0200] "GET / HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 32987
+192.0.2.70 - - [03/Sep/2026:11:40:48 +0200] "GET /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 3744
+192.0.2.63 - - [03/Sep/2026:11:40:50 +0200] "GET /static/app.css HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 111500
+192.0.2.17 - - [03/Sep/2026:11:40:51 +0200] "GET /chambres/14 HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 103474
+192.0.2.40 - - [03/Sep/2026:11:40:59 +0200] "GET /chambres HTTP/1.1" 500 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 91084
+192.0.2.51 - - [03/Sep/2026:11:41:11 +0200] "GET /static/app.css HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 34364
+192.0.2.70 - - [03/Sep/2026:11:41:11 +0200] "POST /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 22561
+192.0.2.70 - - [03/Sep/2026:11:41:16 +0200] "GET / HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 164567
+192.0.2.51 - - [03/Sep/2026:11:41:17 +0200] "GET /chambres HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 36111
+192.0.2.51 - - [03/Sep/2026:11:41:18 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 19639
+192.0.2.63 - - [03/Sep/2026:11:41:18 +0200] "GET / HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 177914
+192.0.2.40 - - [03/Sep/2026:11:41:21 +0200] "GET / HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 102151
+192.0.2.17 - - [03/Sep/2026:11:41:22 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 2453
+192.0.2.14 - - [03/Sep/2026:11:41:23 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 151796
+192.0.2.11 - - [03/Sep/2026:11:41:31 +0200] "GET /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 64346
+192.0.2.58 - - [03/Sep/2026:11:41:32 +0200] "GET / HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 144332
+192.0.2.14 - - [03/Sep/2026:11:41:34 +0200] "GET /static/app.css HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 159338
+192.0.2.23 - - [03/Sep/2026:11:41:42 +0200] "GET /static/app.js HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 179907
+192.0.2.58 - - [03/Sep/2026:11:41:43 +0200] "GET / HTTP/1.1" 500 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 91184
+192.0.2.42 - - [03/Sep/2026:11:41:49 +0200] "GET /chambres HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 28907
+192.0.2.31 - - [03/Sep/2026:11:41:53 +0200] "GET / HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 102907
+192.0.2.58 - - [03/Sep/2026:11:41:54 +0200] "POST /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 169142
+192.0.2.35 - - [03/Sep/2026:11:41:55 +0200] "GET /index.html HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 43420
+192.0.2.31 - - [03/Sep/2026:11:41:56 +0200] "GET /index.html HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 133681
+192.0.2.35 - - [03/Sep/2026:11:41:57 +0200] "GET /reservations HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 1470
+192.0.2.47 - - [03/Sep/2026:11:42:02 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 102483
+192.0.2.29 - - [03/Sep/2026:11:42:10 +0200] "GET / HTTP/1.1" 503 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 167362
+192.0.2.47 - - [03/Sep/2026:11:42:11 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 12658
+192.0.2.23 - - [03/Sep/2026:11:42:19 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 61579
+192.0.2.58 - - [03/Sep/2026:11:42:21 +0200] "GET /static/app.css HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 150954
+192.0.2.5 - - [03/Sep/2026:11:42:22 +0200] "GET /administration/tarifs HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 31395
+192.0.2.40 - - [03/Sep/2026:11:42:25 +0200] "GET /index.html HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 146762
+192.0.2.31 - - [03/Sep/2026:11:42:25 +0200] "GET /reservations HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 128798
+192.0.2.51 - - [03/Sep/2026:11:42:27 +0200] "GET /chambres/21 HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 58291
+192.0.2.63 - - [03/Sep/2026:11:42:36 +0200] "GET /chambres/14 HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 123520
+192.0.2.63 - - [03/Sep/2026:11:42:37 +0200] "GET /reservations HTTP/1.1" 500 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 42371
+192.0.2.42 - - [03/Sep/2026:11:42:37 +0200] "GET /chambres/12 HTTP/1.1" 503 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 6471
+192.0.2.58 - - [03/Sep/2026:11:42:42 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 35642
+192.0.2.47 - - [03/Sep/2026:11:42:45 +0200] "GET /static/app.css HTTP/1.1" 503 260 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 86970
+192.0.2.58 - - [03/Sep/2026:11:42:59 +0200] "GET /chambres HTTP/1.1" 500 260 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 54465
+192.0.2.21 - - [03/Sep/2026:11:42:59 +0200] "GET /index.html HTTP/1.1" 500 260 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 119702
+192.0.2.11 - - [03/Sep/2026:11:43:13 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 67164
+192.0.2.31 - - [03/Sep/2026:11:43:15 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 51665
+192.0.2.29 - - [03/Sep/2026:11:43:22 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 89854
+192.0.2.70 - - [03/Sep/2026:11:43:32 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 170280
+192.0.2.29 - - [03/Sep/2026:11:43:50 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 53497
+192.0.2.47 - - [03/Sep/2026:11:44:09 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 110045
+192.0.2.17 - - [03/Sep/2026:11:44:57 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 149152
+192.0.2.51 - - [03/Sep/2026:11:44:58 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 56260
+192.0.2.63 - - [03/Sep/2026:11:45:03 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 11294
+192.0.2.47 - - [03/Sep/2026:11:45:42 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 51960
+192.0.2.23 - - [03/Sep/2026:11:45:45 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 44237
+192.0.2.42 - - [03/Sep/2026:11:45:48 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 22060
+192.0.2.31 - - [03/Sep/2026:11:46:04 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 44219
+192.0.2.11 - - [03/Sep/2026:11:46:07 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 73486
+192.0.2.42 - - [03/Sep/2026:11:46:12 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 117165
+192.0.2.40 - - [03/Sep/2026:11:46:28 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 52952
+192.0.2.23 - - [03/Sep/2026:11:46:41 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 169332
+192.0.2.14 - - [03/Sep/2026:11:46:52 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 16423
+192.0.2.31 - - [03/Sep/2026:11:47:18 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 18244
+192.0.2.58 - - [03/Sep/2026:11:47:25 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 107351
+192.0.2.35 - - [03/Sep/2026:11:47:34 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 172995
+192.0.2.31 - - [03/Sep/2026:11:47:43 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 148824
+192.0.2.35 - - [03/Sep/2026:11:48:09 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 65075
+192.0.2.17 - - [03/Sep/2026:11:48:17 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 179231
+192.0.2.21 - - [03/Sep/2026:11:48:24 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 38219
+192.0.2.5 - - [03/Sep/2026:11:48:37 +0200] "GET /administration/planning HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 41060
+192.0.2.63 - - [03/Sep/2026:11:48:39 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 152112
+192.0.2.14 - - [03/Sep/2026:11:48:43 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 22794
+192.0.2.70 - - [03/Sep/2026:11:48:44 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 69364
+192.0.2.31 - - [03/Sep/2026:11:48:45 +0200] "GET /tarifs HTTP/1.1" 200 2700 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 76652
+192.0.2.31 - - [03/Sep/2026:11:49:29 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 142819
+192.0.2.21 - - [03/Sep/2026:11:49:59 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 11656
+192.0.2.11 - - [03/Sep/2026:11:50:00 +0200] "GET /favicon.ico HTTP/1.1" 200 1150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 168576
+192.0.2.31 - - [03/Sep/2026:11:50:15 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 169761
+192.0.2.70 - - [03/Sep/2026:11:50:38 +0200] "GET /chambres/21 HTTP/1.1" 200 3870 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 67616
+192.0.2.21 - - [03/Sep/2026:11:50:52 +0200] "GET /chambres HTTP/1.1" 200 8800 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 2521
+192.0.2.14 - - [03/Sep/2026:11:51:13 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 123138
+192.0.2.40 - - [03/Sep/2026:11:51:13 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 45909
+192.0.2.31 - - [03/Sep/2026:11:51:29 +0200] "GET /index.html HTTP/1.1" 200 5123 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 82424
+192.0.2.31 - - [03/Sep/2026:11:51:35 +0200] "GET /chambres/14 HTTP/1.1" 200 3950 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 140505
+192.0.2.17 - - [03/Sep/2026:11:52:04 +0200] "GET /ancienne-page.html HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 50490
+192.0.2.17 - - [03/Sep/2026:11:52:31 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 124680
+192.0.2.35 - - [03/Sep/2026:11:52:31 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 45418
+192.0.2.14 - - [03/Sep/2026:11:52:52 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 148022
+192.0.2.51 - - [03/Sep/2026:11:52:53 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 29088
+192.0.2.31 - - [03/Sep/2026:11:53:30 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (X11; Linux x86_64) Chrome/128.0" 54026
+192.0.2.17 - - [03/Sep/2026:11:54:12 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 103522
+192.0.2.42 - - [03/Sep/2026:11:54:19 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 91173
+192.0.2.21 - - [03/Sep/2026:11:54:26 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 73746
+192.0.2.29 - - [03/Sep/2026:11:54:38 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 114962
+192.0.2.40 - - [03/Sep/2026:11:55:52 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 96522
+192.0.2.17 - - [03/Sep/2026:11:55:58 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 74998
+192.0.2.5 - - [03/Sep/2026:11:56:04 +0200] "GET /administration/export.csv HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 9655
+192.0.2.31 - - [03/Sep/2026:11:56:06 +0200] "GET /static/app.js HTTP/1.1" 200 30110 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 5201
+192.0.2.17 - - [03/Sep/2026:11:56:08 +0200] "GET /mes-reservations HTTP/1.1" 200 5400 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 13400
+192.0.2.17 - - [03/Sep/2026:11:56:14 +0200] "POST /login HTTP/1.1" 302 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 18317
+192.0.2.47 - - [03/Sep/2026:11:57:05 +0200] "GET /static/app.css HTTP/1.1" 200 12040 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 42477
+192.0.2.58 - - [03/Sep/2026:11:57:08 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 127772
+192.0.2.5 - - [03/Sep/2026:11:57:23 +0200] "GET /administration/export.csv HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 15990
+192.0.2.40 - - [03/Sep/2026:11:57:48 +0200] "GET /chambres/12 HTTP/1.1" 200 3900 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 92424
+192.0.2.14 - - [03/Sep/2026:11:57:54 +0200] "GET /contact HTTP/1.1" 200 2100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 88295
+192.0.2.21 - - [03/Sep/2026:11:58:00 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 62729
+192.0.2.70 - - [03/Sep/2026:11:58:06 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 20852
+192.0.2.42 - - [03/Sep/2026:11:58:07 +0200] "POST /reservations HTTP/1.1" 201 310 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) Mobile/15E148" 79761
+192.0.2.21 - - [03/Sep/2026:11:58:32 +0200] "GET /reservations HTTP/1.1" 200 6100 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 48063
+192.0.2.5 - - [03/Sep/2026:11:58:47 +0200] "GET /admin-guide.pdf HTTP/1.1" 200 9800 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/131.0" 153517
+192.0.2.29 - - [03/Sep/2026:11:59:55 +0200] "GET /chambres/99 HTTP/1.1" 404 512 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) Safari/605.1.15" 11874

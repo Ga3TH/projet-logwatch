@@ -1,0 +1,10 @@
+{
+  "top_ips": 10,
+  "seuil_brute_force": 10,
+  "url_login": "/login",
+  "seuil_scan": 5,
+  "fenetre_minutes": 5,
+  "seuil_pic": 100,
+  "seuil_erreurs_5xx": 0.05,
+  "retention_jours": 7
+}
