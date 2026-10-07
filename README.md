@@ -1,121 +1,218 @@
-# projet-logwatch# LogWatch v0 - kit de départ
+# LogWatch
 
-Script Python de surveillance des logs web des trois clients hébergés par OctopodSec.
-Il lit un fichier de logs Apache, applique six détections et écrit un rapport JSON.
+LogWatch est un petit outil Python qui lit des journaux Apache, compte les
+requêtes et recherche plusieurs types d'activité suspecte. Il produit un
+rapport JSON dans `reports/`.
 
-> **État de la v0.** Le script tourne sans planter. Kevin a écrit quatre tests dans
-> `test_logwatch.py` ; **deux sont rouges**. D'autres détections donnent des résultats
-> qu'il trouve bizarres, sans avoir eu le temps de chercher. C'est votre point de départ :
-> voir le sujet du projet, Sprint 1.
+Ce guide explique comment installer et lancer le projet sous **Windows avec
+PowerShell**.
 
-## Contenu du kit
+## Sommaire
 
-| Fichier               | Rôle                                                                                   |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| `logwatch.py`         | le script v0, base de départ                                                           |
-| `test_logwatch.py`    | les quatre tests de Kevin, dont deux échouent                                          |
-| `config.example.json` | les seuils : **à copier en `config.json`**                                             |
-| `.env.example`        | les chemins par défaut : **à copier en `.env`**                                        |
-| `sample-logs.log`     | deux heures de logs d'un client, avec ce qu'il faut pour faire réagir chaque détection |
-| `regex-apache.md`     | le format des lignes et la regex qui les lit                                           |
-| `README.md`           | ce fichier                                                                             |
+1. [Installer Python](#1-installer-python)
+2. [Ouvrir le dossier du projet](#2-ouvrir-le-dossier-du-projet)
+3. [Créer l'environnement et installer pytest](#3-créer-lenvironnement-et-installer-pytest)
+4. [Préparer la configuration](#4-préparer-la-configuration)
+5. [Lancer les tests](#5-lancer-les-tests)
+6. [Explorer les logs](#6-explorer-les-logs)
+7. [Lancer LogWatch](#7-lancer-logwatch)
+8. [Résoudre les problèmes courants](#résoudre-les-problèmes-courants)
 
-## Mise en route
+## 1. Installer Python
 
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Linux / Mac
-.venv\Scripts\activate           # Windows, invite cmd
-.venv\Scripts\Activate.ps1       # Windows, PowerShell (terminal de VS Code)
-pip install pytest
-cp config.example.json config.json
-cp .env.example .env
-pytest test_logwatch.py -v       # 2 FAIL attendus
-python logwatch.py               # ecrit reports/rapport-AAAAMMJJ-HHMMSS.json
-python explorer.py                # affiche familles de statuts, requetes par IP et echecs de connexion
+Installe Python 3.11 ou une version plus récente depuis
+[python.org](https://www.python.org/downloads/). Pendant l'installation,
+coche **Add Python to PATH** si cette option est proposée.
+
+Ferme puis rouvre PowerShell et vérifie l'installation :
+
+```powershell
+py --version
 ```
 
-Le script n'a **aucune dépendance** en dehors de la bibliothèque standard ; `pytest`
-ne sert qu'aux tests. Python 3.11 ou plus.
+La commande doit afficher la version de Python.
 
-Options de la ligne de commande (elles ont priorité sur `.env`) :
+## 2. Ouvrir le dossier du projet
 
+Dans PowerShell, place-toi dans le dossier `Logwatch` qui contient
+`logwatch.py` :
+
+```powershell
+Set-Location "$HOME\source\projet-logwatch\Logwatch"
 ```
+
+Si le projet se trouve ailleurs, remplace ce chemin par son emplacement. Pour
+vérifier que tu es dans le bon dossier :
+
+```powershell
+Get-Location
+Get-ChildItem
+```
+
+La liste doit notamment contenir `logwatch.py`, `test_logwatch.py` et
+`sample-logs.log`. **Ne refais pas `cd .\Logwatch\`** si tu es déjà dans ce
+dossier.
+
+## 3. Créer l'environnement et installer pytest
+
+Crée un environnement Python isolé pour ce projet, puis active-le :
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Quand l'environnement est actif, `(.venv)` apparaît au début de l'invite de
+commande. Installe pytest, l'outil qui exécute les tests :
+
+```powershell
+python -m pip install pytest
+```
+
+LogWatch lui-même utilise la bibliothèque standard de Python ; pytest est
+nécessaire uniquement pour lancer les tests.
+
+## 4. Préparer la configuration
+
+Les fichiers `config.example.json` et `env.example` sont des modèles. Pour
+créer les fichiers locaux utilisés par le programme, exécute dans PowerShell :
+
+```powershell
+if (-not (Test-Path config.json)) { Copy-Item config.example.json config.json }
+if (-not (Test-Path .env)) { Copy-Item env.example .env }
+```
+
+`config.json` contient les seuils des détections. `.env` contient les chemins
+par défaut du fichier de logs, de la configuration et des rapports. Tu peux
+garder les valeurs fournies pour commencer.
+
+## 5. Lancer les tests
+
+Depuis le dossier `Logwatch`, avec `(.venv)` actif, exécute :
+
+```powershell
+python -m pytest test_logwatch.py -v
+```
+
+Les quatre tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
+
+```text
+4 passed
+```
+
+Les tests vérifient le décodage d'une ligne Apache, le total des requêtes par
+IP, la détection d'échecs de connexion et l'exclusion de pages légitimes du
+scan.
+
+## 6. Explorer les logs
+
+Lance le script d'exploration :
+
+```powershell
+python explorer.py
+```
+
+Avec le fichier fourni `sample-logs.log`, les valeurs attendues sont :
+
+| Vérification | Résultat attendu |
+| --- | ---: |
+| Requêtes lues | 743 |
+| Lignes ignorées | 3 |
+| Réponses 2xx | 531 |
+| Réponses 3xx | 28 |
+| Réponses 4xx | 136 |
+| Réponses 5xx | 48 |
+| Somme des familles de réponse | 743 |
+| Somme des requêtes par IP (D1) | 743 |
+| Échecs de connexion de `198.51.100.23` | 45 |
+
+La liste des requêtes par IP est affichée en entier par `explorer.py`.
+
+## 7. Lancer LogWatch
+
+Pour analyser les logs d'exemple et créer un rapport JSON :
+
+```powershell
+python logwatch.py
+```
+
+Le programme affiche ses résultats dans le terminal et écrit un fichier
+`rapport-AAAAMMJJ-HHMMSS.json` dans `reports/`.
+
+Les chemins peuvent être fournis directement en ligne de commande :
+
+```powershell
 python logwatch.py --log sample-logs.log --config config.json --reports reports
 ```
 
-## Le rapport
-
-Un fichier JSON par exécution, dans `reports/` :
-
-```
-genere_le, fichier, total_lines, lignes_ignorees, config,
-D1_requetes_par_ip, D2_brute_force, D3_scan, D4_pic_trafic, D5_erreurs_5xx, D6_rapports_purges
-```
-
-`total_lines` est le nombre de lignes **exploitées** ; les lignes qui n'ont pas la forme
-attendue sont comptées à part dans `lignes_ignorees`.
-
-## Les seuils (`config.json`)
-
-| Clé                 | Défaut   | Sens                                                                                                            |
-| ------------------- | -------- | --------------------------------------------------------------------------------------------------------------- |
-| `top_ips`           | 10       | nombre d'IP affichées par D1                                                                                    |
-| `seuil_brute_force` | 10       | D2 : une IP est signalée **dès qu'elle atteint** ce nombre d'échecs de connexion                                |
-| `url_login`         | `/login` | D2 : la route de connexion surveillée                                                                           |
-| `seuil_scan`        | 5        | D3 : nombre d'URL suspectes distinctes à partir duquel une IP est signalée                                      |
-| `fenetre_minutes`   | 5        | D4 : largeur d'une fenêtre, en minutes ; les fenêtres se suivent sans se chevaucher (10:00-10:05, 10:05-10:10…) |
-| `seuil_pic`         | 100      | D4 : requêtes dans une fenêtre au-delà desquelles on parle de pic                                               |
-| `seuil_5xx`         | 0.05     | D5 : part de réponses 5xx tolérée (5 %)                                                                         |
-| `retention_jours`   | 7        | D6 : âge maximal d'un rapport avant purge (**jours**)                                                           |
+Les options de la ligne de commande remplacent les chemins configurés dans
+`.env`. Pour arrêter le programme une fois terminé, rien de particulier n'est
+nécessaire : il revient automatiquement à l'invite PowerShell.
 
 ## Les détections
 
-**D1 - Requêtes par IP.** Compte **toutes** les requêtes de chaque IP, quel que soit le
-code de réponse, et affiche les `top_ips` plus actives. La somme de toutes les IP doit
-être égale à `total_lines`.
+- **D1 — Requêtes par IP :** compte toutes les requêtes de chaque adresse IP.
+- **D2 — Brute force :** compte les `POST` vers `/login` répondant `401` ou
+  `403`, puis signale les adresses au-dessus du seuil.
+- **D3 — Scan :** recherche les requêtes vers des chemins typiques de scanners,
+  comme `/.env`, `/.git/` ou `/phpmyadmin/`.
+- **D4 — Pic de trafic :** calcule la charge moyenne par minute et la requête
+  maximale sur une minute.
+- **D5 — Erreurs serveur :** calcule la proportion de réponses `5xx`.
+- **D6 — Purge :** supprime les anciens rapports selon la rétention configurée.
 
-**D2 - Brute force.** Une IP qui enchaîne des échecs de connexion (`POST` sur `url_login`
-avec un 401 ou un 403) est signalée dès que son nombre d'échecs atteint
-`seuil_brute_force`.
+Les seuils se trouvent dans `config.json`. Les valeurs par défaut sont définies
+dans `logwatch.py`.
 
-**D3 - Scan de vulnérabilités.** Une IP qui demande au moins `seuil_scan` URL distinctes
-typiques d'un scanner (`/wp-admin/`, `/phpmyadmin/`, `/.env`, `/.git/`, `../`,
-`xmlrpc.php`…) est signalée. Les pages légitimes du site ne doivent jamais apparaître.
+## Résoudre les problèmes courants
 
-**D4 - Pic de trafic.** Le trafic est découpé en fenêtres de `fenetre_minutes` minutes ;
-si une fenêtre dépasse `seuil_pic` requêtes, c'est un pic, et le rapport dit laquelle.
+### `pytest` n'est pas reconnu
 
-**D5 - Erreurs serveur.** Part des réponses 5xx sur l'ensemble des requêtes ; alerte
-au-delà de `seuil_5xx`.
+Vérifie que l'environnement est actif (`(.venv)` au début de la ligne) et
+lance pytest ainsi :
 
-**D6 - Purge des rapports.** Les rapports contiennent des adresses IP : ce sont des
-données personnelles. Tout rapport plus vieux que `retention_jours` **jours** est
-supprimé à chaque exécution. Dans les rapports, les IP sont écrites avec le dernier
-octet masqué (`203.0.113.x`).
+```powershell
+python -m pytest test_logwatch.py -v
+```
 
-## D7 - à ajouter (Sprint 1, étape 7)
+Cette forme fonctionne même si la commande `pytest` seule n'est pas trouvée.
 
-**D7 - Requêtes lentes.** Le dernier champ de chaque ligne est la durée de traitement
-en microsecondes (`%D`, voir `regex-apache.md`). D7 signale les requêtes dont la durée
-dépasse `seuil_lenteur_ms` (**millisecondes**, défaut 2000, à ajouter dans la
-configuration). Le rapport porte une entrée `D7_requetes_lentes` avec :
+### L'activation de `.venv` est bloquée
 
-- `nb` : le nombre de requêtes lentes ;
-- `requetes` : la liste des requêtes concernées, chacune avec `ip` (anonymisée), `url`,
-  `methode`, `duree_ms`, triée de la plus lente à la moins lente, limitée aux 20 premières.
+Dans PowerShell, autorise les scripts uniquement pour le terminal courant,
+puis active l'environnement :
 
-Une ligne sans champ durée (log combined classique) n'est jamais comptée comme lente.
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+```
 
-## Ce que le jeu de logs contient
+Fermer le terminal annule cette autorisation. Il est aussi possible de ne pas
+activer l'environnement et d'appeler directement ses exécutables :
 
-`sample-logs.log` couvre deux heures d'un matin ordinaire chez un client : du trafic
-normal depuis une quinzaine d'adresses, une tentative de brute force sur `/login`,
-un scanner qui sonde les URL classiques, un pic de trafic sur quelques minutes, une
-salve d'erreurs serveur et quelques requêtes anormalement lentes. Il contient aussi
-trois lignes mal formées.
+```powershell
+.\.venv\Scripts\python.exe -m pytest test_logwatch.py -v
+.\.venv\Scripts\python.exe explorer.py
+.\.venv\Scripts\python.exe logwatch.py
+```
 
-## Ce qui n'est pas dans le kit
+### `py` ou `python` n'est pas reconnu
 
-Pas de serveur, pas de base de données, pas d'envoi d'e-mail. Le script se lance à la
-main ou par une tâche planifiée : ce n'est pas votre sujet.
+Installe Python, ferme puis rouvre PowerShell, et réessaie `py --version`.
+
+### Aucun fichier de rapport n'apparaît
+
+Vérifie que LogWatch a lu au moins une ligne exploitable et que le dossier
+indiqué par `--reports` existe ou peut être créé.
+
+## Fichiers principaux
+
+| Fichier | Rôle |
+| --- | --- |
+| `logwatch.py` | Lecture des logs, détections et création du rapport |
+| `explorer.py` | Comptages exploratoires indépendants |
+| `test_logwatch.py` | Tests automatisés |
+| `sample-logs.log` | Fichier de logs d'exemple |
+| `config.example.json` | Modèle des seuils de détection |
+| `env.example` | Modèle des chemins par défaut |
+| `regex-apache.md` | Format des lignes de log reconnu |
