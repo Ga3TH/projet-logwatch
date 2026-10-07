@@ -32,6 +32,7 @@ cp config.example.json config.json
 cp .env.example .env
 pytest test_logwatch.py -v       # 2 FAIL attendus
 python logwatch.py               # ecrit reports/rapport-AAAAMMJJ-HHMMSS.json
+python explorer.py                # affiche familles de statuts, requetes par IP et echecs de connexion
 ```
 
 Le script n'a **aucune dépendance** en dehors de la bibliothèque standard ; `pytest`
