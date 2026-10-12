@@ -1,8 +1,16 @@
-"""Tests ecrits par Kevin sur la v0 - quatre tests, deux en echec au moment de la reprise.
+"""Tests de LogWatch, dont la regression B3 sur le pic de trafic D4.
 
 Lancer :  pytest test_logwatch.py -v
 """
-from logwatch import parser_ligne, d1_requetes_par_ip, d2_brute_force, d3_scan
+from logwatch import (
+    compter_par_minute,
+    d1_requetes_par_ip,
+    d2_brute_force,
+    d3_scan,
+    d4_pic_trafic,
+    parser_ligne,
+    regrouper_par_fenetre,
+)
 
 LIGNE_OK = ('203.0.113.7 - - [03/Sep/2026:10:15:32 +0200] "GET /index.html HTTP/1.1" '
             '200 5123 "-" "Mozilla/5.0" 1523')
@@ -54,3 +62,45 @@ def test_d3_ignore_url_legitime():
     entrees = [parser_ligne(_ligne("10.0.0.5", "GET", page, 200, minute=i))
                for i, page in enumerate(pages)]
     assert d3_scan(entrees, seuil=5) == []
+
+
+def test_compter_par_minute_compte_toutes_les_requetes():
+    entrees = [
+        parser_ligne(_ligne("10.0.0.1", "GET", "/a", 200, minute=12)),
+        parser_ligne(_ligne("10.0.0.2", "GET", "/b", 404, minute=12)),
+        parser_ligne(_ligne("10.0.0.3", "GET", "/c", 500, minute=13)),
+    ]
+
+    par_minute = compter_par_minute(entrees)
+
+    assert sum(par_minute.values()) == len(entrees)
+    assert max(par_minute.values()) == 2
+
+
+def test_B3_d4_regroupe_et_signale_la_fenetre_la_plus_chargee():
+    entrees = [
+        parser_ligne(_ligne("10.0.0.1", "GET", "/a", 200, minute=14)),
+        parser_ligne(_ligne("10.0.0.1", "GET", "/b", 200, minute=14)),
+        parser_ligne(_ligne("10.0.0.2", "GET", "/c", 200, minute=15)),
+        parser_ligne(_ligne("10.0.0.3", "GET", "/d", 200, minute=18)),
+        parser_ligne(_ligne("10.0.0.4", "GET", "/e", 200, minute=20)),
+    ]
+
+    par_fenetre = regrouper_par_fenetre(entrees, fenetre_minutes=5)
+    d4 = d4_pic_trafic(entrees, seuil_pic=1, fenetre_minutes=5)
+
+    assert sum(par_fenetre.values()) == len(entrees)
+    assert d4["fenetre_pic"] == "2026-09-03 10:10 - 2026-09-03 10:15"
+    assert d4["charge"] == 2
+    assert d4["minute_pic"] == "2026-09-03 10:14"
+    assert d4["max_par_minute"] == 2
+    assert d4["alerte"] is True
+
+
+def test_d4_ne_declenche_pas_si_charge_egale_au_seuil():
+    entrees = [
+        parser_ligne(_ligne("10.0.0.1", "GET", "/a", 200, minute=1)),
+        parser_ligne(_ligne("10.0.0.2", "GET", "/b", 200, minute=2)),
+    ]
+
+    assert d4_pic_trafic(entrees, seuil_pic=2, fenetre_minutes=5)["alerte"] is False

@@ -94,10 +94,10 @@ Depuis le dossier `Logwatch`, avec `(.venv)` actif, exécute :
 python -m pytest test_logwatch.py -v
 ```
 
-Les quatre tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
+Les sept tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
 
 ```text
-4 passed
+7 passed
 ```
 
 Les tests vérifient le décodage d'une ligne Apache, le total des requêtes par
@@ -156,8 +156,10 @@ nécessaire : il revient automatiquement à l'invite PowerShell.
   `403`, puis signale les adresses au-dessus du seuil.
 - **D3 — Scan :** recherche les requêtes vers des chemins typiques de scanners,
   comme `/.env`, `/.git/` ou `/phpmyadmin/`.
-- **D4 — Pic de trafic :** calcule la charge moyenne par minute et la requête
-  maximale sur une minute.
+- **D4 — Pic de trafic :** regroupe les requêtes dans les fenêtres de
+  `fenetre_minutes` configurées, puis signale si la fenêtre la plus chargée
+  dépasse `seuil_pic`. Le rapport indique aussi la fenêtre et la minute les
+  plus chargées.
 - **D5 — Erreurs serveur :** calcule la proportion de réponses `5xx`.
 - **D6 — Purge :** supprime les anciens rapports selon la rétention configurée.
 

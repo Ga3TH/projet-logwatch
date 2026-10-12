@@ -2,12 +2,13 @@
 
 # arrêté à l'étape 5, fermé ligne à ligne à l'étape 6
 
-# Registre des défauts LogWatch - 2 défauts ouverts au 2026-09-30
+# Registre des défauts LogWatch - 3 défauts consignés au 2026-10-12 (2 ouverts)
 
 | n°  | date       | symptôme observé                                                | fonction suspectée   | état   |
 | --- | ---------- | --------------------------------------------------------------- | -------------------- | ------ |
 | B1  | 2026-09-30 | test_d1_somme_egale_total_lines rouge : attendu 6, reçu 3       | d1_requetes_par_ip() | ouvert |
 | B2  | 2026-09-30 | test_d3_ignore_url_legitime rouge : attendu [], reçu une alerte | d3_scan()            | ouvert |
+| B3  | 2026-10-12 | D4 manque le pic : moyenne sous le seuil malgré 170 requêtes/min | d4_pic_trafic()      | fermé |
 
 ## B1 - Erreurs HTTP absentes du total
 
@@ -34,3 +35,12 @@ Correction prévue : retirer le motif générique « admin » et conserver les m
 | 121   | `192.0.2.14 - - [03/Sep/2026:10:21:07 +0200] "GET /chambres HTTP/1.1" 200`                    | `None` : la ligne ne correspond pas à la regex `LIGNE` (`logwatch.py` ligne 26); taille, référent et agent manquent.                                             |
 | 301   | `<<< rotation du journal 03/Sep/2026 >>>`                                                     | `None` : c'est une note de rotation, pas une ligne au format Apache attendu par `LIGNE` (`logwatch.py` ligne 26).                                                |
 | 521   | `192.0.2.31 - - [03/Sep/2026:11:2x:15 +0200] "GET / HTTP/1.1" 200 4200 "-" "Mozilla/5.0" 900` | `None` : la regex correspond, mais `datetime.strptime()` (`logwatch.py` ligne 86) rejette la date, car `2x` n'est pas une valeur valide pour les minutes (`%M`). |
+
+
+## B3 - Pic de trafic D4 non détecté
+
+Symptôme observé : le rapport affiche `alerte=False` alors qu'une minute contient 170 requêtes et que la fenêtre de cinq minutes correspondante contient 190.
+Fonction visée : `d4_pic_trafic()` et l'exploration D4 de `explorer.py`.
+Cause racine : D4 calculait la moyenne des seules minutes présentes, puis comparait cette moyenne à `seuil_pic`. La charge totale d'une fenêtre n'était pas mesurée.
+Correction appliquée : compter les requêtes par minute, les regrouper en fenêtres consécutives de `fenetre_minutes`, puis comparer la fenêtre la plus chargée à `seuil_pic`. Le rapport expose aussi la minute et la fenêtre de pic.
+État : fermé le 2026-10-12. La régression est couverte par `test_B3_d4_regroupe_et_signale_la_fenetre_la_plus_chargee`.

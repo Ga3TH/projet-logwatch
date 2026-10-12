@@ -15,7 +15,6 @@ import argparse
 import json
 import os
 import re
-import statistics
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timedelta
@@ -114,6 +113,30 @@ def anonymiser_ip(ip):
 
 
 # ---------------------------------------------------------------- detections
+def compter_par_minute(entrees):
+    """Rend le nombre de requetes pour chaque minute presente dans le log."""
+    compteur = Counter()
+    for entree in entrees:
+        minute = entree["horodatage"].replace(second=0, microsecond=0)
+        compteur[minute] += 1
+    return compteur
+
+
+def regrouper_par_fenetre(entrees, fenetre_minutes):
+    """Compte les requetes dans des fenetres consecutives alignees sur minuit."""
+    if isinstance(fenetre_minutes, bool) or not isinstance(fenetre_minutes, int) or fenetre_minutes <= 0:
+        raise ValueError("fenetre_minutes doit etre un entier strictement positif")
+
+    compteur = Counter()
+    for entree in entrees:
+        horodatage = entree["horodatage"]
+        minutes_jour = horodatage.hour * 60 + horodatage.minute
+        debut = horodatage.replace(hour=0, minute=0, second=0, microsecond=0)
+        debut += timedelta(minutes=minutes_jour - minutes_jour % fenetre_minutes)
+        compteur[debut] += 1
+    return compteur
+
+
 def d1_requetes_par_ip(entrees, top_ips):
     """D1 - nombre de requetes par IP, les top_ips plus actives en tete, et la somme de toutes."""
     compteur = Counter()
@@ -156,19 +179,31 @@ def d3_scan(entrees, seuil):
 
 
 def d4_pic_trafic(entrees, seuil_pic, fenetre_minutes):
-    """D4 - pic de trafic : plus de seuil_pic requetes dans une fenetre de fenetre_minutes minutes."""
-    par_minute = Counter()
-    for e in entrees:
-        par_minute[e["horodatage"].strftime("%Y-%m-%d %H:%M")] += 1
-    if not par_minute:
-        return {"alerte": False, "charge": 0, "max_par_minute": 0, "minute_pic": None}
-    charge = statistics.mean(par_minute.values())
-    minute_pic, maxi = par_minute.most_common(1)[0]
+    """D4 - alerte si la fenetre la plus chargee depasse le seuil de requetes."""
+    par_minute = compter_par_minute(entrees)
+    par_fenetre = regrouper_par_fenetre(entrees, fenetre_minutes)
+    if not par_fenetre:
+        return {
+            "alerte": False,
+            "charge": 0,
+            "max_par_minute": 0,
+            "minute_pic": None,
+            "fenetre_pic": None,
+        }
+
+    minute_pic = min(par_minute, key=lambda minute: (-par_minute[minute], minute))
+    fenetre_pic = min(par_fenetre, key=lambda debut: (-par_fenetre[debut], debut))
+    charge = par_fenetre[fenetre_pic]
+    fin_fenetre = fenetre_pic + timedelta(minutes=fenetre_minutes)
     return {
         "alerte": charge > seuil_pic,
-        "charge": round(charge, 1),
-        "max_par_minute": maxi,
-        "minute_pic": minute_pic,
+        "charge": charge,
+        "max_par_minute": par_minute[minute_pic],
+        "minute_pic": minute_pic.strftime("%Y-%m-%d %H:%M"),
+        "fenetre_pic": (
+            f"{fenetre_pic.strftime('%Y-%m-%d %H:%M')} - "
+            f"{fin_fenetre.strftime('%Y-%m-%d %H:%M')}"
+        ),
     }
 
 
@@ -247,8 +282,11 @@ def main(argv=None):
     print(f"  D1 somme par IP        : {rapport['D1_requetes_par_ip']['somme']}")
     print(f"  D2 brute force         : {len(rapport['D2_brute_force'])} IP(s)")
     print(f"  D3 scan                : {len(rapport['D3_scan'])} IP(s)")
-    print(f"  D4 pic de trafic       : alerte={rapport['D4_pic_trafic']['alerte']} "
-          f"(max {rapport['D4_pic_trafic']['max_par_minute']}/min)")
+    d4 = rapport["D4_pic_trafic"]
+    print(f"  D4 pic de trafic       : alerte={d4['alerte']} "
+          f"({d4['charge']} requetes / {config['fenetre_minutes']} min, "
+          f"fenetre {d4['fenetre_pic']}, minute pic {d4['minute_pic']} "
+          f"({d4['max_par_minute']} requetes))")
     print(f"  D5 erreurs 5xx         : {rapport['D5_erreurs_5xx']['ratio']:.1%} "
           f"alerte={rapport['D5_erreurs_5xx']['alerte']}")
     print(f"  D6 rapports purges     : {len(rapport['D6_rapports_purges'])}")

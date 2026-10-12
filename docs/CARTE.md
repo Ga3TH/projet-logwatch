@@ -10,7 +10,7 @@ supprime : Les anciens rapports JSON expirés sur le disque.
 
 ## Les fonctions, dans l'ordre du fichier
 
-Les quatorze lignes se generent, depuis logwatch/ :
+Les seize fonctions se generent, depuis logwatch/ :
 Select-String -Path logwatch.py -Pattern '^def ' |
 ForEach-Object { "| " + $\_.Line.Substring(4).TrimEnd(':') + " | |" }
 Coller le resultat sous l'en-tete, puis remplir la seule colonne rend.
@@ -23,6 +23,8 @@ Coller le resultat sous l'en-tete, puis remplir la seule colonne rend.
 | lire_log(chemin, encodage="utf-8")                 | Un tuple `(entrees, ignorees)`                         |
 | anonymiser_ip(ip)                                  | Une chaîne (IP masquée)                                |
 | d1_requetes_par_ip(entrees, top_ips)               | Un dictionnaire à deux clés (`par_ip` et `somme`)      |
+| compter_par_minute(entrees)                        | Un compteur des requêtes par minute                    |
+| regrouper_par_fenetre(entrees, fenetre_minutes)    | Un compteur des requêtes par fenêtre                    |
 | d2_brute_force(entrees, url_login, seuil)          | Une liste de dictionnaires d'alertes (gravité haute)   |
 | d3_scan(entrees, seuil)                            | Une liste de dictionnaires d'alertes (gravité moyenne) |
 | d4_pic_trafic(entrees, seuil_pic, fenetre_minutes) | Un dictionnaire d'indicateurs de trafic                |
@@ -39,7 +41,7 @@ Coller le resultat sous l'en-tete, puis remplir la seule colonne rend.
 | D1        | `d1_requetes_par_ip` | Compter TOUTES les requêtes : la somme par IP doit être égale _au moins_ au total de lignes. |
 | D2        | `d2_brute_force`     | Alerte "haute" _au-delà_ de X requêtes en échec (`POST` en 401/403).                         |
 | D3        | `d3_scan`            | Alerte "moyenne" _dès que_ le nombre d'URLs suspectes uniques atteint le `seuil`.            |
-| D4        | `d4_pic_trafic`      | Alerte _au-delà_ de X requêtes en moyenne par minute.                                        |
+| D4        | `d4_pic_trafic`      | Alerte _au-delà_ de X requêtes dans la fenêtre `fenetre_minutes` la plus chargée.              |
 | D5        | `d5_erreurs_5xx`     | Alerte _au-delà_ de X % de réponses d'erreurs `5xx`.                                         |
 | D6        | `d6_purger_rapports` | Suppression des rapports _au-delà_ de X jours d'ancienneté.                                  |
 
