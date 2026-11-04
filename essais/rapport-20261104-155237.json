@@ -1,0 +1,39 @@
+{
+  "genere_le": "2026-11-04T15:52:37",
+  "fichier": "dix-echecs.log",
+  "total_lines": 10,
+  "lignes_ignorees": 0,
+  "config": {
+    "top_ips": 10,
+    "seuil_brute_force": 10,
+    "url_login": "/login",
+    "seuil_scan": 5,
+    "fenetre_minutes": 5,
+    "seuil_pic": 100,
+    "seuil_5xx": 0.5,
+    "retention_jours": 7,
+    "seuil_erreurs_5xx": 0.05
+  },
+  "D1_requetes_par_ip": {
+    "par_ip": {
+      "198.51.100.x": 10
+    },
+    "somme": 10
+  },
+  "D2_brute_force": [],
+  "D3_scan": [],
+  "D4_pic_trafic": {
+    "alerte": false,
+    "charge": 10,
+    "max_par_minute": 10,
+    "minute_pic": "2026-09-03 10:30",
+    "fenetre_pic": "2026-09-03 10:30 - 2026-09-03 10:35"
+  },
+  "D5_erreurs_5xx": {
+    "nb_5xx": 0,
+    "total": 10,
+    "ratio": 0.0,
+    "alerte": false
+  },
+  "D6_rapports_purges": []
+}

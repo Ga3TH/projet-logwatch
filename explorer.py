@@ -1,19 +1,58 @@
-"""Petit script d'exploration des logs, sans modifier logwatch.py."""
-from pathlib import Path
+"""Exploration indépendante des logs, sans modifier logwatch.py."""
+import json
+import argparse
 from datetime import timedelta
+from pathlib import Path
 
-from logwatch import (
-    charger_config,
-    compter_par_minute,
-    d4_pic_trafic,
-    lire_log,
-    regrouper_par_fenetre,
-)
+from logwatch import charger_config, lire_log
+
+
+def compter_par_minute(entrees):
+    """Compte les requêtes de chaque minute présente dans les entrées."""
+    par_minute = {}
+    for entree in entrees:
+        minute = entree["horodatage"].replace(second=0, microsecond=0)
+        par_minute[minute] = par_minute.get(minute, 0) + 1
+    return par_minute
+
+
+def regrouper_par_fenetre(entrees, fenetre_minutes):
+    """Compte les requêtes dans des fenêtres fixes alignées sur minuit."""
+    if isinstance(fenetre_minutes, bool) or not isinstance(fenetre_minutes, int) or fenetre_minutes <= 0:
+        raise ValueError("fenetre_minutes doit être un entier strictement positif")
+
+    par_fenetre = {}
+    for entree in entrees:
+        horodatage = entree["horodatage"]
+        minutes_jour = horodatage.hour * 60 + horodatage.minute
+        debut = horodatage.replace(hour=0, minute=0, second=0, microsecond=0)
+        debut += timedelta(minutes=minutes_jour - minutes_jour % fenetre_minutes)
+        par_fenetre[debut] = par_fenetre.get(debut, 0) + 1
+    return par_fenetre
+
+
+def cle_du_maximum(comptages):
+    """Rend la clé du plus grand comptage, première clé en cas d'égalité."""
+    if not comptages:
+        return None
+    return min(comptages, key=lambda cle: (-comptages[cle], cle))
 
 
 if __name__ == "__main__":
-    fichier_log = Path(__file__).with_name("sample-logs.log")
-    configuration = charger_config(Path(__file__).with_name("config.json"))
+    dossier = Path(__file__).parent
+    parser = argparse.ArgumentParser(description="Exploration indépendante des logs LogWatch")
+    parser.add_argument(
+        "--log", type=Path, default=dossier / "sample-logs.log",
+        help="fichier de logs à explorer (par défaut : sample-logs.log)",
+    )
+    parser.add_argument(
+        "--reports", type=Path, default=dossier / "reports",
+        help="dossier des rapports LogWatch à comparer (par défaut : reports)",
+    )
+    args = parser.parse_args()
+    fichier_log = args.log if args.log.is_absolute() else dossier / args.log
+    dossier_rapports = args.reports if args.reports.is_absolute() else dossier / args.reports
+    configuration = charger_config(dossier / "config.json")
     entrees, ignorees = lire_log(fichier_log)
 
     familles = {"2xx": 0, "3xx": 0, "4xx": 0, "5xx": 0}
@@ -24,7 +63,7 @@ if __name__ == "__main__":
         famille = f"{entree['statut'] // 100}xx"
         if famille not in familles:
             raise ValueError(f"Famille de statut non prise en charge : {famille}")
-        familles[famille] = familles.get(famille, 0) + 1
+        familles[famille] += 1
 
         ip = entree["ip"]
         requetes_par_ip[ip] = requetes_par_ip.get(ip, 0) + 1
@@ -53,14 +92,42 @@ if __name__ == "__main__":
     print(f"Somme des requêtes par IP (D1) : {somme_ips}")
     print(f"Échecs de connexion par adresse IP : {echecs_par_ip}")
     print(f"Adresses sous le seuil D2 ({seuil_brute_force}) : {echecs_sous_seuil}")
+    alertes_d2_exploration = {
+        ip: nombre
+        for ip, nombre in echecs_par_ip.items()
+        if nombre > seuil_brute_force
+    }
+    print(
+        f"D2 selon la règle actuelle de logwatch.py (> {seuil_brute_force}) : "
+        f"{alertes_d2_exploration}"
+    )
+    atteint_seuil = {
+        ip: nombre
+        for ip, nombre in echecs_par_ip.items()
+        if nombre >= seuil_brute_force
+    }
+    print(
+        f"D2 si le seuil est atteint (>= {seuil_brute_force}, comme formulé dans la fiche) : "
+        f"{atteint_seuil}"
+    )
+
+    total_requetes = len(entrees)
+    nb_5xx = familles["5xx"]
+    ratio_5xx = nb_5xx / total_requetes if total_requetes else 0.0
+    seuil_5xx = configuration["seuil_5xx"]
+    alerte_5xx = ratio_5xx > seuil_5xx
+    print(
+        f"D5 erreurs 5xx : {nb_5xx}/{total_requetes} = {ratio_5xx:.2%}, "
+        f"seuil chargé={seuil_5xx:.2%}, alerte={alerte_5xx}"
+    )
 
     par_minute = compter_par_minute(entrees)
     print("Requêtes par minute :")
     for minute, nombre in sorted(par_minute.items()):
         print(f"  {minute:%Y-%m-%d %H:%M} : {nombre}")
 
-    if par_minute:
-        minute_pic = min(par_minute, key=lambda minute: (-par_minute[minute], minute))
+    minute_pic = cle_du_maximum(par_minute)
+    if minute_pic is not None:
         print(
             f"Minute la plus chargée : {minute_pic:%Y-%m-%d %H:%M} "
             f"({par_minute[minute_pic]} requêtes)"
@@ -73,9 +140,82 @@ if __name__ == "__main__":
         fin = debut + timedelta(minutes=fenetre_minutes)
         print(f"  {debut:%Y-%m-%d %H:%M} - {fin:%Y-%m-%d %H:%M} : {nombre}")
 
-    d4 = d4_pic_trafic(entrees, configuration["seuil_pic"], fenetre_minutes)
+    fenetre_pic = cle_du_maximum(par_fenetre)
+    seuil_pic = configuration["seuil_pic"]
+    charge_pic = par_fenetre[fenetre_pic] if fenetre_pic is not None else 0
+    alerte = charge_pic > seuil_pic
+    if fenetre_pic is None:
+        texte_fenetre = "aucune"
+        valeur_fenetre_rapport = None
+    else:
+        fin_fenetre = fenetre_pic + timedelta(minutes=fenetre_minutes)
+        texte_fenetre = (
+            f"{fenetre_pic:%Y-%m-%d %H:%M} - {fin_fenetre:%Y-%m-%d %H:%M}"
+        )
+        valeur_fenetre_rapport = texte_fenetre
+    texte_minute = minute_pic.strftime("%Y-%m-%d %H:%M") if minute_pic else "aucune"
+    compte_minute_pic = par_minute[minute_pic] if minute_pic is not None else 0
     print(
-        f"D4 pic de trafic : charge={d4['charge']}/{configuration['seuil_pic']} "
-        f"requêtes, alerte={d4['alerte']}, fenêtre={d4['fenetre_pic']}, "
-        f"minute pic={d4['minute_pic']} ({d4['max_par_minute']} requêtes)"
+        f"D4 pic de trafic : charge={charge_pic}/{seuil_pic} requêtes, "
+        f"alerte={alerte}, fenêtre={texte_fenetre}, "
+        f"minute pic={texte_minute} ({compte_minute_pic} requêtes)"
     )
+
+    # Une comparaison n'est possible qu'après la création d'un rapport LogWatch.
+    rapports = sorted(
+        dossier_rapports.glob("rapport-*.json"), key=lambda chemin: chemin.stat().st_mtime
+    )
+    if rapports:
+        with rapports[-1].open(encoding="utf-8") as fichier:
+            rapport = json.load(fichier)
+        config_rapport = rapport.get("config", {})
+        print(
+            "Seuil D5 copié dans le rapport : "
+            f"{config_rapport.get('seuil_5xx', 'absent')} "
+            "(clé attendue par logwatch.py : seuil_5xx)"
+        )
+        d4_rapport = rapport.get("D4_pic_trafic", {})
+        concorde = (
+            d4_rapport.get("charge") == charge_pic
+            and d4_rapport.get("alerte") == alerte
+            and d4_rapport.get("fenetre_pic") == valeur_fenetre_rapport
+            and d4_rapport.get("minute_pic") == (
+                minute_pic.strftime("%Y-%m-%d %H:%M") if minute_pic is not None else None
+            )
+            and d4_rapport.get("max_par_minute") == compte_minute_pic
+        )
+        resultat = "concorde" if concorde else "DIFFÉRENCE"
+        print(f"Comparaison D4 avec {rapports[-1].name} : {resultat}")
+
+        d5_rapport = rapport.get("D5_erreurs_5xx", {})
+        d5_concorde = (
+            d5_rapport.get("nb_5xx") == nb_5xx
+            and d5_rapport.get("total") == total_requetes
+            and d5_rapport.get("ratio") == round(ratio_5xx, 4)
+            and d5_rapport.get("alerte") == alerte_5xx
+        )
+        print(
+            f"Comparaison D5 avec {rapports[-1].name} : "
+            f"{'concorde' if d5_concorde else 'DIFFÉRENCE'}"
+        )
+
+        alertes_d2_rapport = {
+            alerte.get("ip"): alerte.get("tentatives")
+            for alerte in rapport.get("D2_brute_force", [])
+        }
+        ips_d2_exploration = {
+            ip: nombre for ip, nombre in alertes_d2_exploration.items()
+        }
+        # LogWatch anonymise la dernière partie des IPv4 dans son rapport.
+        alertes_d2_anonymisees = {
+            ".".join(ip.split(".")[:-1] + ["x"]): nombre
+            for ip, nombre in ips_d2_exploration.items()
+            if len(ip.split(".")) == 4
+        }
+        print(
+            f"Comparaison D2 avec {rapports[-1].name} : "
+            f"{'concorde' if alertes_d2_rapport == alertes_d2_anonymisees else 'DIFFÉRENCE'} "
+            f"(le script déclenche si le nombre est strictement supérieur au seuil)"
+        )
+    else:
+        print("Comparaison D4 : aucun rapport trouvé ; lancez logwatch.py d'abord.")

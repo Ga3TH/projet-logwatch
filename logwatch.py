@@ -158,7 +158,7 @@ def d2_brute_force(entrees, url_login, seuil):
             echecs[e["ip"]] += 1
     alertes = []
     for ip, n in echecs.most_common():
-        if n > seuil:
+        if n >= seuil:
             alertes.append({"ip": anonymiser_ip(ip), "tentatives": n, "gravite": "haute"})
     return alertes
 
