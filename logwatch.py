@@ -39,6 +39,7 @@ DEFAUTS = {
     "fenetre_minutes": 5,
     "seuil_pic": 100,
     "seuil_5xx": 0.5,
+    "seuil_requete_lente_ms": 2000,
     "retention_jours": 7,
 }
 

@@ -94,15 +94,14 @@ Depuis le dossier `Logwatch`, avec `(.venv)` actif, exécute :
 python -m pytest test_logwatch.py -v
 ```
 
-Les sept tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
+Les neuf tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
 
 ```text
-7 passed
+9 passed
 ```
 
-Les tests vérifient le décodage d'une ligne Apache, le total des requêtes par
-IP, la détection d'échecs de connexion et l'exclusion de pages légitimes du
-scan.
+Les tests vérifient le décodage Apache, les comptages D1 à D4 et les cas de
+seuil et de durée absente de l'exploration D7.
 
 ## 6. Explorer les logs
 
@@ -125,8 +124,12 @@ Avec le fichier fourni `sample-logs.log`, les valeurs attendues sont :
 | Somme des familles de réponse | 743 |
 | Somme des requêtes par IP (D1) | 743 |
 | Échecs de connexion de `198.51.100.23` | 45 |
+| Requêtes avec durée >= 2 000 ms (exploration D7) | 9 |
+| Requêtes sans durée (exploration D7) | 0 |
 
 La liste des requêtes par IP est affichée en entier par `explorer.py`.
+Les valeurs attendues pour D1 à D7, les cas limites et les tests de régression
+sont détaillés dans [docs/spec.md](docs/spec.md).
 
 ## 7. Lancer LogWatch
 
@@ -161,7 +164,10 @@ nécessaire : il revient automatiquement à l'invite PowerShell.
   dépasse `seuil_pic`. Le rapport indique aussi la fenêtre et la minute les
   plus chargées.
 - **D5 — Erreurs serveur :** calcule la proportion de réponses `5xx`.
-- **D6 — Purge :** supprime les anciens rapports selon la rétention configurée.
+- **D6 — Purge :** la rétention configurée par `retention_jours` est exprimée
+  en jours (7 par défaut). **Défaut connu :** le code applique actuellement un
+  facteur 30 et conserve donc les rapports environ 210 jours ; ce problème est
+  consigné sous B6 dans [docs/REGISTRE.md](docs/REGISTRE.md).
 
 Les seuils se trouvent dans `config.json`. Les valeurs par défaut sont définies
 dans `logwatch.py`.

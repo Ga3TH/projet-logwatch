@@ -11,15 +11,17 @@ from logwatch import (
     parser_ligne,
     regrouper_par_fenetre,
 )
+from explorer import compter_requetes_lentes
 
 LIGNE_OK = ('203.0.113.7 - - [03/Sep/2026:10:15:32 +0200] "GET /index.html HTTP/1.1" '
             '200 5123 "-" "Mozilla/5.0" 1523')
 
 
-def _ligne(ip, methode, url, statut, minute=0):
+def _ligne(ip, methode, url, statut, minute=0, duree=800):
     """Fabrique une ligne de log minimale au format attendu."""
-    return (f'{ip} - - [03/Sep/2026:10:{minute:02d}:00 +0200] "{methode} {url} HTTP/1.1" '
-            f'{statut} 512 "-" "test" 800')
+    ligne = (f'{ip} - - [03/Sep/2026:10:{minute:02d}:00 +0200] "{methode} {url} HTTP/1.1" '
+             f'{statut} 512 "-" "test"')
+    return ligne if duree is None else f"{ligne} {duree}"
 
 
 def test_parser_ligne_combined():
@@ -104,3 +106,28 @@ def test_d4_ne_declenche_pas_si_charge_egale_au_seuil():
     ]
 
     assert d4_pic_trafic(entrees, seuil_pic=2, fenetre_minutes=5)["alerte"] is False
+
+
+def test_d7_compte_les_durees_au_seuil_de_2000_ms():
+    entrees = [
+        parser_ligne(_ligne("10.0.0.1", "GET", "/a", 200, duree=1_999_999)),
+        parser_ligne(_ligne("10.0.0.2", "GET", "/b", 200, duree=2_000_000)),
+        parser_ligne(_ligne("10.0.0.3", "GET", "/c", 200, duree=2_000_001)),
+    ]
+
+    assert compter_requetes_lentes(entrees, seuil_ms=2000) == {
+        "lentes": 2,
+        "mesurees": 3,
+        "sans_duree": 0,
+    }
+
+
+def test_d7_exclut_une_requete_sans_duree():
+    entree = parser_ligne(_ligne("10.0.0.1", "GET", "/a", 200, duree=None))
+
+    assert entree["duree"] is None
+    assert compter_requetes_lentes([entree], seuil_ms=2000) == {
+        "lentes": 0,
+        "mesurees": 0,
+        "sans_duree": 1,
+    }

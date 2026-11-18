@@ -38,6 +38,19 @@ def cle_du_maximum(comptages):
     return min(comptages, key=lambda cle: (-comptages[cle], cle))
 
 
+def compter_requetes_lentes(entrees, seuil_ms):
+    """Compte les durées connues au seuil D7, dont l'unité source est la microseconde."""
+    if isinstance(seuil_ms, bool) or not isinstance(seuil_ms, int) or seuil_ms <= 0:
+        raise ValueError("seuil_ms doit être un entier strictement positif")
+
+    durees = [entree["duree"] for entree in entrees if entree["duree"] is not None]
+    return {
+        "lentes": sum(duree >= seuil_ms * 1000 for duree in durees),
+        "mesurees": len(durees),
+        "sans_duree": len(entrees) - len(durees),
+    }
+
+
 if __name__ == "__main__":
     dossier = Path(__file__).parent
     parser = argparse.ArgumentParser(description="Exploration indépendante des logs LogWatch")
@@ -119,6 +132,13 @@ if __name__ == "__main__":
     print(
         f"D5 erreurs 5xx : {nb_5xx}/{total_requetes} = {ratio_5xx:.2%}, "
         f"seuil chargé={seuil_5xx:.2%}, alerte={alerte_5xx}"
+    )
+
+    seuil_requete_lente_ms = configuration["seuil_requete_lente_ms"]
+    d7 = compter_requetes_lentes(entrees, seuil_requete_lente_ms)
+    print(
+        f"D7 exploration des requêtes lentes (>= {seuil_requete_lente_ms} ms) : "
+        f"{d7['lentes']}/{d7['mesurees']} ; durées absentes : {d7['sans_duree']}"
     )
 
     par_minute = compter_par_minute(entrees)
