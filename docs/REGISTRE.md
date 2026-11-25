@@ -1,6 +1,6 @@
 # Registre des défauts LogWatch — relu et classé à l'étape 6
 
-# 6 défauts consignés au 2026-11-18 (2 ouverts)
+# 6 défauts consignés au 2026-11-18 (vérification indépendante de B4-B6 à consigner)
 
 Priorité, de la plus importante à la moins importante : **fausse un résultat**,
 **gêne**, **cosmétique**. Les six défauts observés faussent un résultat ; aucun
@@ -12,9 +12,9 @@ cosmétique.
 | B1  | fausse un résultat  | 2026-09-30 | `test_d1_somme_egale_total_lines` rouge : attendu 6, reçu 3                                      | `d1_requetes_par_ip()`             | `test_d1_somme_egale_total_lines`                        | fermé  |
 | B2  | fausse un résultat  | 2026-09-30 | `test_d3_ignore_url_legitime` rouge : attendu [], reçu une alerte                                | `d3_scan()`                        | `test_d3_ignore_url_legitime`                            | fermé  |
 | B3  | fausse un résultat  | 2026-10-12 | D4 manque le pic : moyenne sous le seuil malgré 170 requêtes/min                                 | `d4_pic_trafic()`                  | `test_B3_d4_regroupe_et_signale_la_fenetre_la_plus_chargee` | fermé  |
-| B4  | fausse un résultat  | 2026-11-04 | D5 affiche `alerte=False` à 6,5 % ; seuil chargé à 50 % au lieu des 5 % du modèle               | configuration D5 / `d5_erreurs_5xx()` | `test_d5_seuil_5xx_depuis_config` (à écrire)             | ouvert |
-| B5  | fausse un résultat  | 2026-11-04 | D2 ne signale pas une IP qui atteint exactement 10 échecs                                         | `d2_brute_force()`                 | `test_d2_seuil_exact_declenche` (à écrire)               | fermé  |
-| B6  | fausse un résultat  | 2026-11-18 | D6 conserve un rapport de 8 jours malgré une rétention configurée à 7 jours                      | `d6_purger_rapports()`             | `test_d6_retention_7_jours_garde_la_limite_et_supprime_8_jours` (à écrire) | ouvert |
+| B4  | fausse un résultat  | 2026-11-04 | D5 affiche `alerte=False` à 6,5 % ; seuil chargé à 50 % au lieu des 5 % du modèle               | configuration D5 / `d5_erreurs_5xx()` | `test_d5_seuil_5xx_depuis_config`             | fermé |
+| B5  | fausse un résultat  | 2026-11-04 | D2 ne signale pas une IP qui atteint exactement 10 échecs                                         | `d2_brute_force()`                 | `test_d2_seuil_exact_declenche`               | fermé |
+| B6  | fausse un résultat  | 2026-11-18 | D6 conserve un rapport de 8 jours malgré une rétention configurée à 7 jours                      | `d6_purger_rapports()`             | `test_d6_retention_7_jours_garde_la_limite_et_supprime_8_jours` | fermé |
 
 ## B1 - Erreurs HTTP absentes du total
 
@@ -63,8 +63,12 @@ Test en échec : D5 affiche `alerte=False` à 6,5 % alors que la configuration a
 Attendu / reçu : 5 % / 6,5 % de réponses `5xx`, avec alerte non déclenchée.
 Fonction visée : `charger_config()` et `d5_erreurs_5xx()`, dans `logwatch.py`.
 Cause racine : le modèle de configuration utilise une clé différente du nom attendu par le programme (`seuil_erreurs_5xx` au lieu de `seuil_5xx`). La valeur par défaut de `logwatch.py` (0,5 soit 50 %) est donc conservée, ce qui masque l'alerte réellement attendue.
-Correction prévue : aligner le nom de la clé sur le code (`seuil_5xx`) ou ajouter une conversion explicite lors du chargement de la configuration.
-État : ouvert, consigné pendant l'étape 5 sans correction.
+Correction observée : aligner le nom de la clé sur le code (`seuil_5xx`) et
+conserver une conversion explicite pour les anciennes configurations
+`seuil_erreurs_5xx`.
+État : fermé le 2026-11-25 ; le chargement accepte la clé du modèle
+`seuil_erreurs_5xx`, la convertit en `seuil_5xx` et conserve `0.05` comme
+valeur par défaut lorsque aucune configuration n'est fournie.
 
 ## B5 - D2 ne signale pas le seuil exact
 
@@ -95,19 +99,35 @@ affiché `D6 rapports purges : 0` et l'a conservé ; avec un rapport âgé de
 211 jours a conservé les deux premiers et supprimé le dernier. La condition
 étant strictement `âge > limite`, la purge commence après 210 jours (7 × 30).
 
-Correction prévue : supprimer le facteur 30 et comparer l'âge directement à
-`retention_jours`.
+Correction appliquée : supprimer le facteur 30 et supprimer les rapports dont
+l'âge dépasse directement `retention_jours`.
 
 Priorité : fausse un résultat — la durée réelle dépasse la durée annoncée et
 laisse les rapports contenant des données IP en conservation plus longtemps.
 
-État : ouvert, consigné à l'étape 6 sans correction du code.
+État : fermé le 2026-11-25 ; les tests vérifient qu'un rapport de 7 jours est
+conservé et qu'un rapport de 8 jours est supprimé.
 
-## Tests de régression à compléter
+## Tests de régression
 
-- B4 : `test_d5_seuil_5xx_depuis_config` doit charger le seuil de 5 % du modèle
-  et déclencher l'alerte pour 48 réponses `5xx` sur 743 (6,46 %).
-- B5 : `test_d2_seuil_exact_declenche` doit déclencher l'alerte pour exactement
+- B4 : `test_d5_seuil_5xx_depuis_config` charge le seuil de 5 % du modèle et
+  déclenche l'alerte pour 48 réponses `5xx` sur 743 (6,46 %).
+- B5 : `test_d2_seuil_exact_declenche` vérifie le déclenchement pour exactement
   10 échecs lorsque le seuil vaut 10.
-- B6 : `test_d6_retention_7_jours_garde_la_limite_et_supprime_8_jours` doit
-  conserver un rapport âgé de 7 jours et supprimer celui âgé de 8 jours.
+- B6 : `test_d6_retention_7_jours_garde_la_limite_et_supprime_8_jours` vérifie
+  qu'un rapport âgé de 7 jours est conservé et qu'un rapport âgé de 8 jours est
+  supprimé.
+
+## Vérification indépendante — étape 9
+
+Correctifs B4-B6 : commit `1408c70` (auteur Git : `gaeth-hub`).
+
+Les captures reçues le 2026-11-25 montrent les vérifications suivantes :
+
+- B4 : ancienne clé `seuil_erreurs_5xx` à 6 % ; résultat `6.5% alerte=True`.
+- B5 : 3 échecs pour un seuil de 3 ; une alerte de 3 tentatives.
+- B6 : rapport âgé de 9 jours avec une rétention de 7 jours ; purge effectuée et
+  fichier absent (`Test-Path` renvoie `False`).
+
+Vérificateur indépendant de l'auteur : à renseigner après confirmation par une
+autre personne. La clôture formelle de l'étape 9 reste en attente.

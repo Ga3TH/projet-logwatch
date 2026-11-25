@@ -41,8 +41,8 @@ pour l'exploration D7.
 - **Limite :** exactement **10** échecs doivent aussi déclencher l'alerte
   (`nombre >= seuil`).
 - **Régressions :** `test_d2_brute_force_detecte` vérifie le cas à 40 échecs ;
-  `test_d2_seuil_exact_declenche` (à écrire) vérifiera la limite exacte.
-- **Défaut lié :** B5, fermé ; le cas de limite reste à automatiser.
+  `test_d2_seuil_exact_declenche` vérifie la limite exacte.
+- **Défaut lié :** B5, fermé.
 
 ### D3 — Scan
 
@@ -66,24 +66,24 @@ pour l'exploration D7.
 - **Attendu sur l'exemple :** **48 / 743 = 6,46 %** de réponses 5xx. Avec le
   seuil du modèle de configuration de **5 %**, l'alerte vaut `true` (la règle
   est strictement supérieure au seuil).
-- **État actuel :** B4 est ouvert : le modèle nomme la clé
-  `seuil_erreurs_5xx`, tandis que le code attend `seuil_5xx`. Le seuil effectif
-  reste donc à 50 % et l'alerte est actuellement fausse.
-- **Régression à écrire :** `test_d5_seuil_5xx_depuis_config` doit charger 5 %
+- **État actuel :** B4 est fermé : `charger_config()` accepte la clé du modèle
+  `seuil_erreurs_5xx`, la convertit en `seuil_5xx`, et les fichiers de modèle
+  utilisent directement `seuil_5xx`.
+- **Régression :** `test_d5_seuil_5xx_depuis_config` charge 5 %
   depuis le modèle et obtenir une alerte pour 48 réponses 5xx sur 743.
-- **Défaut lié :** B4, ouvert.
+- **Défaut lié :** B4, fermé.
 
 ### D6 — Rétention des rapports
 
 - **Attendu avec une rétention de 7 jours :** un rapport âgé de 7 jours est
   conservé ; un rapport âgé de **8 jours** est supprimé.
-- **État actuel :** B6 est ouvert. Le code multiplie 7 par 30 et conserve donc
-  le rapport de 8 jours ; la purge réelle ne commence qu'après 210 jours.
-- **Régression à écrire :**
+- **État actuel :** B6 est fermé. Le code compare la rétention en jours
+  directement, sans facteur 30.
+- **Régression :**
   `test_d6_retention_7_jours_garde_la_limite_et_supprime_8_jours` doit créer
   des rapports contrôlés âgés de 7 et 8 jours, puis vérifier leur présence
   respective après purge.
-- **Défaut lié :** B6, ouvert.
+- **Défaut lié :** B6, fermé.
 
 ### D7 — Requêtes lentes (spécification à venir)
 

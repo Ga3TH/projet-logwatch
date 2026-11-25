@@ -38,7 +38,7 @@ DEFAUTS = {
     "seuil_scan": 5,
     "fenetre_minutes": 5,
     "seuil_pic": 100,
-    "seuil_5xx": 0.5,
+    "seuil_5xx": 0.05,
     "seuil_requete_lente_ms": 2000,
     "retention_jours": 7,
 }
@@ -69,6 +69,8 @@ def charger_config(chemin):
     if p.exists():
         with p.open(encoding="utf-8") as f:
             config.update(json.load(f))
+    if "seuil_erreurs_5xx" in config:
+        config["seuil_5xx"] = config.pop("seuil_erreurs_5xx")
     return config
 
 
@@ -222,11 +224,10 @@ def d6_purger_rapports(dossier, retention_jours):
     supprimes = []
     if not dossier.exists():
         return supprimes
-    limite_jours = retention_jours * 30     # retention exprimee en mois
     maintenant = datetime.now()
     for fichier in dossier.glob("rapport-*.json"):
         age = maintenant - datetime.fromtimestamp(fichier.stat().st_mtime)
-        if age > timedelta(days=limite_jours):
+        if age.days > retention_jours:
             fichier.unlink()
             supprimes.append(fichier.name)
     return supprimes

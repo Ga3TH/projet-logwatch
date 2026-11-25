@@ -3,14 +3,20 @@
 Lancer :  pytest test_logwatch.py -v
 """
 from logwatch import (
+    charger_config,
     compter_par_minute,
     d1_requetes_par_ip,
     d2_brute_force,
     d3_scan,
     d4_pic_trafic,
+    d5_erreurs_5xx,
+    d6_purger_rapports,
     parser_ligne,
     regrouper_par_fenetre,
 )
+import json
+import os
+from datetime import datetime, timedelta
 from explorer import compter_requetes_lentes
 
 LIGNE_OK = ('203.0.113.7 - - [03/Sep/2026:10:15:32 +0200] "GET /index.html HTTP/1.1" '
@@ -106,6 +112,63 @@ def test_d4_ne_declenche_pas_si_charge_egale_au_seuil():
     ]
 
     assert d4_pic_trafic(entrees, seuil_pic=2, fenetre_minutes=5)["alerte"] is False
+
+
+def test_d2_seuil_exact_declenche():
+    """D2 signale une IP des que le nombre d'echecs atteint exactement le seuil."""
+    entrees = [
+        parser_ligne(_ligne("198.51.100.9", "POST", "/login", 401, minute=i % 60))
+        for i in range(10)
+    ]
+
+    alertes = d2_brute_force(entrees, url_login="/login", seuil=10)
+
+    assert len(alertes) == 1
+    assert alertes[0]["tentatives"] == 10
+
+
+def test_d5_seuil_5xx_depuis_config(tmp_path):
+    """D5 charge le seuil de 5 % du modele de configuration."""
+    chemin_config = tmp_path / "config.json"
+    chemin_config.write_text(
+        json.dumps({"seuil_5xx": 0.05}),
+        encoding="utf-8",
+    )
+    config = charger_config(chemin_config)
+    entrees = [
+        parser_ligne(_ligne(
+            f"10.0.0.{i % 250}",
+            "GET",
+            "/",
+            500 if i < 48 else 200,
+            minute=i % 60,
+        ))
+        for i in range(743)
+    ]
+
+    resultat = d5_erreurs_5xx(entrees, config["seuil_5xx"])
+
+    assert config["seuil_5xx"] == 0.05
+    assert resultat["nb_5xx"] == 48
+    assert resultat["alerte"] is True
+
+
+def test_d6_retention_7_jours_garde_la_limite_et_supprime_8_jours(tmp_path):
+    """D6 conserve un rapport de 7 jours et supprime un rapport de 8 jours."""
+    rapport_7 = tmp_path / "rapport-7.json"
+    rapport_8 = tmp_path / "rapport-8.json"
+    rapport_7.write_text("{}", encoding="utf-8")
+    rapport_8.write_text("{}", encoding="utf-8")
+    maintenant = datetime.now()
+    for fichier, jours in ((rapport_7, 7), (rapport_8, 8)):
+        timestamp = (maintenant - timedelta(days=jours)).timestamp()
+        os.utime(fichier, (timestamp, timestamp))
+
+    supprimes = d6_purger_rapports(tmp_path, retention_jours=7)
+
+    assert rapport_7.exists()
+    assert not rapport_8.exists()
+    assert supprimes == ["rapport-8.json"]
 
 
 def test_d7_compte_les_durees_au_seuil_de_2000_ms():

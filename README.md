@@ -94,10 +94,10 @@ Depuis le dossier `Logwatch`, avec `(.venv)` actif, exécute :
 python -m pytest test_logwatch.py -v
 ```
 
-Les neuf tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
+Les douze tests actuels doivent afficher `PASSED`, puis un résumé semblable à :
 
 ```text
-9 passed
+12 passed
 ```
 
 Les tests vérifient le décodage Apache, les comptages D1 à D4 et les cas de
@@ -165,9 +165,8 @@ nécessaire : il revient automatiquement à l'invite PowerShell.
   plus chargées.
 - **D5 — Erreurs serveur :** calcule la proportion de réponses `5xx`.
 - **D6 — Purge :** la rétention configurée par `retention_jours` est exprimée
-  en jours (7 par défaut). **Défaut connu :** le code applique actuellement un
-  facteur 30 et conserve donc les rapports environ 210 jours ; ce problème est
-  consigné sous B6 dans [docs/REGISTRE.md](docs/REGISTRE.md).
+  en jours (7 par défaut). Un rapport âgé de 7 jours est conservé ; un rapport
+  âgé de 8 jours est supprimé.
 
 Les seuils se trouvent dans `config.json`. Les valeurs par défaut sont définies
 dans `logwatch.py`.

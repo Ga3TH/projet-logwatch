@@ -110,10 +110,6 @@ if __name__ == "__main__":
         for ip, nombre in echecs_par_ip.items()
         if nombre > seuil_brute_force
     }
-    print(
-        f"D2 selon la règle actuelle de logwatch.py (> {seuil_brute_force}) : "
-        f"{alertes_d2_exploration}"
-    )
     atteint_seuil = {
         ip: nombre
         for ip, nombre in echecs_par_ip.items()
